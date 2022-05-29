@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crisma Burger</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../img/logoCrismaBurger.png" type="image/x-icon">
 </head>
@@ -13,13 +14,16 @@
 <body>
     <!-- Barra de navegacion -->
     <header class="header">
-        <a href="../index.html" class="header__link">
+        <a href="../index.html" class="header__link animate__animated animate__slideInLeft">
             <img src="../img/logoCrismaBurger.png" alt="logo-crisma-burger" class="header__logo">
             <h1 class="header__titulo">Crisma Burger</h1>
         </a>
-
+        <label for="menuBurger" class="label__menuburger">
+            <img src="../img/menu_burger.svg" alt="menudehamburguesa" class="img__menuburger">
+        </label>
+        <input type="checkbox" name="menuBurger" id="menuBurger" class="input__menuburger">
         <nav class="nav">
-            <ul class="nav__ul">
+            <ul class="nav__ul animate__animated animate__slideInRight">
                 <li class="nav__li">
                     <a href="menu.html" class="nav__link">Menu</a>
                 </li>
@@ -40,7 +44,7 @@
     </header>
     <!-- Pantalla de inicio -->
     <main class="mainContacto">
-        <section class="main__sectionUnoContacto">
+        <section class="main__sectionUnoContacto animate__animated animate__zoomIn">
             <picture class="sectionUno__pictureContacto  picture__contacto">
                 <img src="../img/imagen__contacto.svg" alt="ilustraciondecelular" class="img__contacto">
             </picture>
