@@ -103,10 +103,6 @@ ul {
     font-size: 2rem;
 }
 
-.main {
-    margin: 1rem 0;
-}
-
 .main__sectionUno {
     display: grid;
     grid-template-columns: 2fr 3fr;
@@ -121,6 +117,7 @@ ul {
 .sectionUno__article {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 1rem;
     grid-area: informacion;
@@ -149,9 +146,8 @@ ul {
 }
 
 .div__img {
-    width: 90%;
-    min-width: 170px;
     grid-area: imagen;
+    height: 250px;
 }
 
 .div__contenedor {
@@ -193,7 +189,6 @@ ul {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: 2rem;
     padding: 10rem;
     border-top: #08FF00 solid 2px;
 }
@@ -202,6 +197,11 @@ ul {
     font-size: 3rem;
     font-family: 'Koulen', cursive;
     color: #FFFFFF;
+}
+
+.footer__div {
+    display: flex;
+    gap: 1rem;
 }
 
 .link__imgFooter {
@@ -224,8 +224,6 @@ a {
 
 .main__sectionUnoMenu {
     display: grid;
-    width: 100%;
-    max-width: 1150px;
     justify-items: center;
     row-gap: 2rem;
     grid-template-columns: 2fr 3fr;
@@ -286,8 +284,6 @@ a {
 
 .main__sectionDosMenu {
     display: grid;
-    width: 100%;
-    max-width: 1150px;
     justify-items: center;
     row-gap: 2rem;
     grid-template-columns: 3fr 2fr;
@@ -319,8 +315,6 @@ a {
 
 .main__sectionTresMenu {
     display: grid;
-    width: 100%;
-    max-width: 1150px;
     justify-items: center;
     row-gap: 2rem;
     grid-template-columns: 2fr 3fr;
@@ -352,8 +346,6 @@ a {
 
 .main__sectionCuatroMenu {
     display: grid;
-    width: 100%;
-    max-width: 1150px;
     justify-items: center;
     row-gap: 2rem;
     grid-template-columns: 3fr 2fr;
@@ -432,8 +424,6 @@ a {
 
 .main__sectionUnoPromos {
     display: grid;
-    width: 100%;
-    max-width: 1150px;
     justify-items: center;
     row-gap: 2rem;
     grid-template-columns: 2fr 3fr;
@@ -466,8 +456,6 @@ a {
     display: grid;
     justify-items: center;
     row-gap: 2rem;
-    width: 100%;
-    max-width: 1150px;
     grid-template-columns: 3fr 2fr;
     grid-template-rows: auto;
     grid-template-areas:
@@ -498,8 +486,7 @@ a {
 
 .mainNosotros {
     display: grid;
-    row-gap: 10rem;
-    margin: 5rem 0;
+    row-gap: 5rem;
     justify-items: center;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -507,6 +494,7 @@ a {
 
 .main__sectionUnoNosotros {
     display: grid;
+    margin-top: 3rem;
     justify-items: center;
     row-gap: 2rem;
     grid-template-columns: 2fr 3fr;
@@ -591,8 +579,7 @@ a {
 .mainEnvios {
     display: grid;
     justify-items: center;
-    gap: 2rem;
-    margin: 2rem 0;
+    gap: 1rem;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
 }
@@ -653,13 +640,11 @@ a {
     justify-items: center;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    margin: 2.8rem 0;
 }
 
 .main__sectionUnoContacto {
     display: grid;
     width: 100%;
-    max-width: 1250px;
     align-items: center;
     grid-template-columns: 2fr 3fr 2fr;
     grid-template-rows: auto;
@@ -740,6 +725,11 @@ a {
         font-size: 8px;
     }
 
+    /* MEDIA DE PROMOS */
+    .mainPromos {
+        row-gap: 5rem;
+    }
+
 }
 
 /* 768 PX */
@@ -765,12 +755,12 @@ a {
     }
 
     .nav__ul {
-        height: 90%;
+        height: 100%;
         flex-direction: column;
     }
 
     .nav__link {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .label__menuburger {
@@ -782,10 +772,10 @@ a {
     .input__menuburger:checked~nav {
         visibility: visible;
         display: block;
-        background-image: url("../img/background_menuburger.jpg");
+        background-image: url("../img/background_menuburger.png");
         background-size: cover;
         width: 100%;
-        height: 100vh;
+        height: 50vh;
     }
 
     /* MEDIA DE INDEX */
@@ -812,6 +802,10 @@ a {
 
     /* MEDIA DE ENVIOS */
 
+    .mainEnvios {
+        gap: 5rem;
+    }
+
     .main__sectionUnoEnvios {
         grid-template-areas:
             "tituloEnvios  tituloEnvios"
@@ -819,7 +813,12 @@ a {
             "parrafoEnvios  parrafoEnvios";
     }
 
+
     /* MEDIA DE CONTACTO */
+
+    .mainContacto {
+        padding: 3rem;
+    }
 
     .main__sectionUnoContacto {
         grid-template-columns: 1fr;
@@ -827,8 +826,24 @@ a {
             "formContacto";
     }
 
+    .article__formContacto {
+        gap: 2rem;
+    }
+
     .picture__contacto {
         display: none;
+    }
+
+    .form__labelContacto {
+        font-size: 3rem;
+    }
+
+    .form-control {
+        font-size: 3rem;
+    }
+
+    .btn {
+        --bs-btn-font-size: 3rem;
     }
 }
 
@@ -934,5 +949,11 @@ a {
 
     .sectionUno__picture {
         display: none;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 5rem;
+        padding: 20rem;
     }
 }
