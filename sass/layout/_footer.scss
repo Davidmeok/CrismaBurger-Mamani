@@ -1,0 +1,23 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10rem;
+    border-top: #08FF00 solid 2px;
+
+    &__titulo {
+        font-size: 3rem;
+        font-family: 'Koulen', cursive;
+        color: #FFFFFF;
+    }
+
+    &__div {
+        display: flex;
+        gap: 1rem;
+
+        .link__imgFooter {
+            width: 50px;
+        }
+    }
+}

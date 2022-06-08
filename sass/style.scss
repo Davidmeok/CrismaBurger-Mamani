@@ -1,0 +1,10 @@
+// GENERAL
+@import 'general/reset.scss';
+
+// IMPORT DE LAYOUT
+@import 'layout/grid.scss';
+@import 'layout/header.scss';
+@import 'layout/footer.scss';
+
+// IMPORT DE PAGES
+@import 'pages/index';
