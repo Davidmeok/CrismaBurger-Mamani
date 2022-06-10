@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/translated.css">
     <link rel="shortcut icon" href="../img/logoCrismaBurger.png" type="image/x-icon">
 </head>
 
@@ -20,10 +20,10 @@
             <img src="../img/logoCrismaBurger.png" alt="logo-crisma-burger" class="header__logo">
             <h1 class="header__titulo">Crisma Burger</h1>
         </a>
-        <label for="menuBurger" class="label__menuburger">
-            <img src="../img/menu_burger.svg" alt="menudehamburguesa" class="img__menuburger">
+        <label for="menuBurger" class="menuburger__label">
+            <img src="../img/menu_burger.svg" alt="menudehamburguesa" class="menuburger__img">
         </label>
-        <input type="checkbox" name="menuBurger" id="menuBurger" class="input__menuburger">
+        <input type="checkbox" name="menuBurger" id="menuBurger" class="menuburger__input">
         <nav class="nav animate__animated animate__slideInRight">
             <ul class="nav__ul">
                 <li class="nav__li">
@@ -46,28 +46,26 @@
     </header>
     <!-- Pantalla de inicio -->
     <main class="mainContacto p-5">
-        <section class="main__sectionUnoContacto animate__animated animate__zoomIn">
-            <picture class="sectionUno__pictureContacto  picture__contacto">
-                <img src="../img/imagen__contacto.svg" alt="ilustraciondecelular" class="img__contacto">
+        <section class="sectionUnoContacto animate__animated animate__zoomIn">
+            <picture class="sectionUnoContacto__picture">
+                <img src="../img/imagen__contacto.svg" alt="ilustraciondecelular" class="sectionUnoContacto__img">
             </picture>
-            <article class="sectionUno__articleContacto">
-                <form action="" method="post" class="article__formContacto">
-                    <label for="name" class="form__labelContacto form-label">Nombre</label>
-                    <input type="text" name="name" id="name" placeholder="Name" required
-                        class="form__inputContacto form-control">
-                    <label for="email" class="form__labelContacto form-label">Correo Electronico</label>
-                    <input type="email" name="email" id="email" placeholder="example@gmail.com" required
-                        class="form__inputContacto form-control">
-                    <textarea name="message" id="message" cols="30" rows="9" placeholder="Message" required
-                        class="form__textareaContacto form-control"></textarea>
-                    <div class="form__divContacto">
-                        <button type="reset" class="btn btn-outline-success">Restablecer</button>
-                        <button type="submit" class="btn btn-outline-success">Enviar</button>
-                    </div>
-                </form>
-            </article>
-            <picture class="sectionUno__pictureDosContacto  picture__contacto">
-                <img src="../img/imagendos__contacto.svg" alt="ilustraciondegmail" class="img__contacto">
+            <form action="" method="post" class="formContacto">
+                <label for="name" class="formContacto__label form-label">Nombre</label>
+                <input type="text" name="name" id="name" placeholder="Name" required
+                    class="formContacto__input form-control">
+                <label for="email" class="formContacto__label form-label">Correo Electronico</label>
+                <input type="email" name="email" id="email" placeholder="example@gmail.com" required
+                    class="formContacto__input form-control">
+                <textarea name="message" id="message" cols="30" rows="9" placeholder="Message" required
+                    class="formContacto__textarea form-control"></textarea>
+                <div class="formContacto__buttons">
+                    <button type="reset" class="btn btn-outline-success">Restablecer</button>
+                    <button type="submit" class="btn btn-outline-success">Enviar</button>
+                </div>
+            </form>
+            <picture class="sectionUnoContacto__pictureDos">
+                <img src="../img/imagendos__contacto.svg" alt="ilustraciondegmail" class="sectionUnoContacto__img">
             </picture>
         </section>
     </main>
@@ -76,10 +74,10 @@
         <h6 class="footer__titulo">&copy;Derechos Reservados</h6>
         <div class="footer__div">
             <a href="https://www.instagram.com/crisma.burger" target="_blank" class="footer__link">
-                <img src="../img/icono__instagram.svg" alt="iconoDeInstagram" class="link__imgFooter">
+                <img src="../img/icono__instagram.svg" alt="iconoDeInstagram" class="footer__img">
             </a>
             <a href="https://wa.me/+5491157090208" target="_blank" class="footer__link">
-                <img src="../img/icono_whatsapp.svg" alt="iconoDeWhatsapp" class="link__imgFooter">
+                <img src="../img/icono_whatsapp.svg" alt="iconoDeWhatsapp" class="footer__img">
             </a>
         </div>
     </footer>

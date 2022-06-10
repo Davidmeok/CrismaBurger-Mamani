@@ -1,0 +1,79 @@
+.mainContacto {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+.sectionUnoContacto {
+    display: grid;
+    width: 100%;
+    align-items: center;
+    grid-template-columns: 2fr 3fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "pictureContacto formContacto picture2Contacto";
+
+    &__picture {
+        grid-area: pictureContacto;
+        display: flex;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__pictureDos {
+        grid-area: picture2Contacto;
+    }
+}
+
+.formContacto {
+    grid-area: formContacto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    &__label {
+        color: #FFFFFF;
+        font-size: 2rem;
+        border-bottom: #08FF00 solid 2px;
+    }
+
+    &__input {
+        border-radius: 100px;
+    }
+
+    &__textarea {
+        border-radius: 20px;
+        border: none;
+        padding: 0.5rem;
+    }
+
+    &__buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+}
+
+.form-control {
+    width: 60%;
+    font-size: 1.5rem;
+}
+
+.btn {
+    --bs-btn-font-size: 2rem;
+}
+
+.btn-outline-success {
+    --bs-btn-color: #08FF00;
+    --bs-btn-border-color: #08FF00;
+    --bs-btn-hover-color: #454545;
+    --bs-btn-hover-bg: #08FF00;
+    --bs-btn-hover-border-color: #08FF00;
+    --bs-btn-active-bg: #08FF00;
+    --bs-btn-active-border-color: #08FF00;
+    --bs-btn-disabled-color: #08FF00;
+}

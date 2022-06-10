@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/translated.css">
+    <link rel="stylesheet" href="./css/translated.css">
     <link rel="shortcut icon" href="./img/logoCrismaBurger.png" type="image/x-icon">
 </head>
 
@@ -21,10 +20,10 @@
             <img src="./img/logoCrismaBurger.png" alt="logo-crisma-burger" class="header__logo">
             <h1 class="header__titulo">Crisma Burger</h1>
         </a>
-        <label for="menuBurger" class="label__menuburger">
-            <img src="./img/menu_burger.svg" alt="menudehamburguesa" class="img__menuburger">
+        <label for="menuBurger" class="menuburger__label">
+            <img src="./img/menu_burger.svg" alt="menudehamburguesa" class="menuburger__img">
         </label>
-        <input type="checkbox" name="menuBurger" id="menuBurger" class="input__menuburger">
+        <input type="checkbox" name="menuBurger" id="menuBurger" class="menuburger__input">
         <nav class="nav animate__animated animate__slideInRight">
             <ul class="nav__ul">
                 <li class="nav__li">
@@ -46,20 +45,17 @@
         </nav>
     </header>
     <!-- Pantalla de inicio -->
-    <main class="main mt-3 mb-3">
-        <section class="main__sectionUno">
+    <main class="main mt-5 mb-5">
+        <section class="sectionUnoIndex">
             <picture id="carouselExampleInterval"
-                class="sectionUno__picture carousel slide animate__animated animate__slideInLeft"
+                class="sectionUnoIndex__picture carousel slide animate__animated animate__slideInLeft"
                 data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="8000">
-                        <img src="./img/imagen_main.png" class="d-block w-100" alt="hamburguesasimple">
+                    <div class="carousel-item active" data-bs-interval="5000">
+                        <img src="./img/crisma__especial-index.png" class="d-block w-100" alt="HamburguesaNegra">
                     </div>
-                    <div class="carousel-item" data-bs-interval="8000">
-                        <img src="./img/promo__dos.png" class="d-block w-100" alt="promodehamburguesa">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="8000">
-                        <img src="./img/crisma__especial-index.png" class="d-block w-100" alt="hamburguesablack">
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="./img/promo__dos.png" class="d-block w-100" alt="PromoDeHamburguesa">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
@@ -73,16 +69,16 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </picture>
-            <article class="sectionUno__article animate__animated animate__slideInRight">
-                <h2 class="article__titulo">¡Crisma Burger!</h2>
-                <p class="article__parrafo">ordena tu crisma burger</p>
-                <div class="article__div">
-                    <img src="./img/article__img.svg" alt="publicidad" class="div__img">
-                    <div class="div__contenedor">
-                        <h3 class="contenedor__titulo">encontranos en</h3>
-                        <a href="https://www.instagram.com/crisma.burger" class="contenedor__link" target="_blank">
-                            <img src="./img/icono__instagram.svg" alt="logoDeInstagram" class="link__img">
-                            <h4 class="link__instagram">crisma.burger</h4>
+            <article class="articleUnoIndex animate__animated animate__slideInRight">
+                <h2 class="articleUnoIndex__titulo">¡Crisma Burger!</h2>
+                <p class="articleUnoIndex__parrafo">ordena tu crisma burger</p>
+                <div class="divIndex">
+                    <img src="./img/article__img.svg" alt="publicidad" class="divIndex__img">
+                    <div class="divDosIndex">
+                        <h3 class="divDosIndex__titulo">encontranos en</h3>
+                        <a href="https://www.instagram.com/crisma.burger" class="divDosIndex__link" target="_blank">
+                            <img src="./img/icono__instagram.svg" alt="logoDeInstagram" class="divDosIndex__img">
+                            <h4 class="divDosIndex__instagram">crisma.burger</h4>
                         </a>
                     </div>
                 </div>
@@ -94,10 +90,10 @@
         <h6 class="footer__titulo">&copy;Derechos Reservados</h6>
         <div class="footer__div">
             <a href="https://www.instagram.com/crisma.burger" target="_blank" class="footer__link">
-                <img src="./img/icono__instagram.svg" alt="iconoDeInstagram" class="link__imgFooter">
+                <img src="./img/icono__instagram.svg" alt="iconoDeInstagram" class="footer__img">
             </a>
             <a href="https://wa.me/+5491157090208" target="_blank" class="footer__link">
-                <img src="./img/icono_whatsapp.svg" alt="iconoDeWhatsapp" class="link__imgFooter">
+                <img src="./img/icono_whatsapp.svg" alt="iconoDeWhatsapp" class="footer__img">
             </a>
         </div>
     </footer>

@@ -1,10 +1,10 @@
 .header {
     &__link {
-        grid-area: headerlink;
         display: flex;
         justify-content: center;
         align-items: center;
         text-decoration: none;
+        grid-area: headerlink;
         gap: 1rem;
     }
 
@@ -16,43 +16,49 @@
     &__titulo {
         color: #ffffff;
         font-size: 3.2rem;
+
+        &:hover {
+            color: #08ff00;
+        }
     }
 
-    &__titulo:hover {
-        color: #08ff00;
-    }
+}
 
-    .img__menuburger {
-        height: 40px;
-    }
-
-    .label__menuburger,
-    .input__menuburger {
+.menuburger {
+    &__label {
         display: none;
     }
 
-    .nav {
-        &__ul {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            align-items: center;
-        }
+    &__img {
+        height: 40px;
+    }
 
-        &__li {
-            list-style: none;
-            border-bottom: solid;
-            border-color: #08ff00;
-        }
+    &__input {
+        display: none;
+    }
+}
 
-        &__link {
-            text-decoration: none;
-            color: #ffffff;
-            font-family: "Koulen", cursive;
-            font-size: 2rem;
-        }
+.nav {
+    &__ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
 
-        &__link:hover {
+    &__li {
+        list-style: none;
+        border-bottom: solid;
+        border-color: #08ff00;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #ffffff;
+        font-family: "Koulen", cursive;
+        font-size: 2rem;
+
+        &:hover {
             color: #08ff00;
         }
     }

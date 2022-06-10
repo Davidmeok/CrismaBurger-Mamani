@@ -1,0 +1,240 @@
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 8px;
+    }
+
+    /* MEDIA DE PROMOS */
+    .mainPromos {
+        row-gap: 5rem;
+    }
+
+}
+
+/* 768 PX */
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 7px;
+    }
+
+    /* MENU DE HAMBURGUESA */
+    .header {
+        justify-items: flex-start;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "headerlink menuburger"
+            "nav    nav"
+    }
+
+    .nav {
+        visibility: hidden;
+        display: none;
+    }
+
+    .nav__ul {
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .nav__link {
+        font-size: 2.5rem;
+    }
+
+    .menuburger__label {
+        display: block;
+        grid-area: menuburger;
+        justify-self: center;
+    }
+
+    .menuburger__input:checked~.nav {
+        visibility: visible;
+        display: block;
+        background-image: url("../img/background_menuburger.png");
+        background-size: cover;
+        width: 100%;
+        height: 50vh;
+    }
+
+    /* MEDIA DE INDEX */
+
+    .sectionUnoIndex {
+        grid-template-columns: 2fr 3fr;
+        grid-template-areas:
+            "informacion informacion"
+            "picture picture";
+    }
+
+    .sectionUnoIndex__picture {
+        display: none;
+    }
+
+    /* MEDIA DE NOSOTROS */
+
+    .sectionUnoNosotros {
+        grid-template-areas:
+            "tituloNosotros tituloNosotros"
+            "pictureNosotros pictureNosotros"
+            "parrafoNosotros parrafoNosotros";
+    }
+
+    /* MEDIA DE ENVIOS */
+
+    .mainEnvios {
+        gap: 5rem;
+    }
+
+    .sectionUnoEnvios {
+        grid-template-areas:
+            "tituloEnvios  tituloEnvios"
+            "pictureEnvios  pictureEnvios"
+            "parrafoEnvios  parrafoEnvios";
+    }
+
+
+    /* MEDIA DE CONTACTO */
+
+    .mainContacto {
+        padding: 3rem;
+    }
+
+    .sectionUnoContacto {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "formContacto";
+    }
+
+    .formContacto {
+        gap: 2rem;
+    }
+
+    .sectionUnoContacto__picture,
+    .sectionUnoContacto__pictureDos {
+        display: none;
+    }
+
+    .formContacto__label {
+        font-size: 3rem;
+    }
+
+    .form-control {
+        font-size: 3rem;
+    }
+
+    .btn {
+        --bs-btn-font-size: 3rem;
+    }
+}
+
+/* 600 PX */
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 6px;
+    }
+
+    /* MEDIA DE INDEX */
+
+    .divIndex {
+        gap: 3rem;
+        grid-template-areas:
+            "imagen imagen"
+            "link   link";
+    }
+
+    .divIndex__img {
+        width: 100%;
+    }
+
+    .divDosIndex {
+        align-items: center;
+    }
+
+    .divDosIndex__link {
+        justify-content: center;
+    }
+
+
+    /* MEDIA DE MENU */
+
+    .sectionUnoMenu {
+        grid-template-areas:
+            "tituloMenu  tituloMenu"
+            "pictureMenu  pictureMenu"
+            "parrafoMenu  parrafoMenu";
+    }
+
+    .sectionDosMenu {
+        grid-template-areas:
+            "titulo2Menu  titulo2Menu"
+            "picture2Menu  picture2Menu"
+            "parrafo2Menu  parrafo2Menu";
+    }
+
+    .sectionTresMenu {
+        grid-template-areas:
+            "titulo3Menu    titulo3Menu"
+            "picture3Menu  picture3Menu"
+            "parrafo3Menu   parrafo3Menu";
+    }
+
+    .sectionCuatroMenu {
+        grid-template-areas:
+            "titulo4Menu  titulo4Menu"
+            "picture4Menu  picture4Menu"
+            "parrafo4Menu  parrafo4Menu";
+    }
+
+    /* MEDIA DE PROMOS */
+
+    .sectionUnoPromos {
+        grid-template-areas:
+            "tituloPromos  tituloPromos"
+            "picturePromos  picturePromos"
+            "parrafoPromos  parrafoPromos";
+    }
+
+    .sectionDosPromos {
+        grid-template-areas:
+            "titulo2Promos  titulo2Promos"
+            "picture2Promos  picture2Promos"
+            "parrafo2Promos  parrafo2Promos";
+    }
+
+    /* MEDIA DE NOSOTROS */
+
+    .sectionUnoNosotros {
+        grid-template-areas:
+            "tituloNosotros tituloNosotros"
+            "pictureNosotros pictureNosotros"
+            "parrafoNosotros parrafoNosotros";
+    }
+
+    .sectionDosNosotros {
+        grid-template-areas:
+            "avatar1    avatar1"
+            "avatar2    avatar2";
+    }
+}
+
+/* 480 PX */
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 5px;
+    }
+
+    /* MEDIA DE INDEX */
+
+    .sectionUnoIndex__picture {
+        display: none;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 5rem;
+        padding: 20rem;
+    }
+}

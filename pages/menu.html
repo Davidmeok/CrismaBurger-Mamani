@@ -10,7 +10,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/translated.css">
     <link rel="shortcut icon" href="../img/logoCrismaBurger.png" type="image/x-icon">
 </head>
 
@@ -21,10 +21,10 @@
             <img src="../img/logoCrismaBurger.png" alt="logo-crisma-burger" class="header__logo">
             <h1 class="header__titulo">Crisma Burger</h1>
         </a>
-        <label for="menuBurger" class="label__menuburger">
-            <img src="../img/menu_burger.svg" alt="menudehamburguesa" class="img__menuburger">
+        <label for="menuBurger" class="menuburger__label">
+            <img src="../img/menu_burger.svg" alt="menudehamburguesa" class="menuburger__img">
         </label>
-        <input type="checkbox" name="menuBurger" id="menuBurger" class="input__menuburger">
+        <input type="checkbox" name="menuBurger" id="menuBurger" class="menuburger__input">
         <nav class="nav animate__animated animate__slideInRight">
             <ul class="nav__ul">
                 <li class="nav__li">
@@ -47,94 +47,99 @@
     </header>
     <!-- Pantalla de inicio -->
     <main class="mainMenu p-5">
-        <section class="main__sectionUnoMenu container-fluid" data-aos="fade-up">
-            <picture class="sectionUno__pictureMenu">
-                <img src="../img/crisma__classic.png" alt="hamburguesaClasica" class="picture__imgMenu">
+        <section class="sectionUnoMenu container-fluid" data-aos="fade-up">
+            <picture class="sectionUnoMenu__picture">
+                <img src="../img/crisma__classic.png" alt="hamburguesaClasica" class="sectionUnoMenu__img">
             </picture>
-            <article class="sectionUno__articleMenu">
-                <h2 class="article__tituloMenu  titulosDeHamburguesas">¡Classic!</h2>
+            <article class="sectionUnoMenu__article">
+                <h2 class="titulosDeHamburguesas">¡Classic!</h2>
             </article>
-            <article class="sectionUno__articleDosMenu">
-                <p class="article__parrafoMenu  parrafosDeHamburguesas">1 Medallon de Carne + Cheddar + Panceta + Papas
+            <article class="sectionUnoMenu__articleDos">
+                <p class="parrafosDeHamburguesas">1 Medallon de Carne + Cheddar + Panceta + Papas
                     Fritas + Condimentos <span class="parrafo__preciosMenu"> $550</span></p>
             </article>
         </section>
 
-        <picture class="main__pictureNosotros">
-            <img src="../img/flecha.svg" alt="flechahaciaabajo" class="picture__arrow">
+        <picture class="pictureArrow">
+            <img src="../img/flecha.svg" alt="flechahaciaabajo" class="pictureArrow__img">
         </picture>
 
-        <section class="main__sectionDosMenu container-fluid" data-aos="fade-up">
-            <picture class="sectionDos__pictureMenu">
-                <img src="../img/mega__crisma.png" alt="hamburguesaMega" class="pictureDos__imgMenu">
+        <section class="sectionDosMenu container-fluid" data-aos="fade-up">
+            <picture class="sectionDosMenu__picture">
+                <img src="../img/mega__crisma.png" alt="hamburguesaMega" class="sectionDosMenu__img">
             </picture>
-            <article class="sectionDos__articleMenu">
-                <h3 class="article__tituloMenu  titulosDeHamburguesas">¡Mega Crisma!</h3>
+            <article class="sectionDosMenu__article">
+                <h3 class="titulosDeHamburguesas">¡Mega Crisma!</h3>
             </article>
-            <article class="sectionDos__articleDosMenu">
-                <p class="article__parrafoMenu  parrafosDeHamburguesas">2 Medallon de Carne + Cheddar + Panceta + Papas
+            <article class="sectionDosMenu__articleDos">
+                <p class="parrafosDeHamburguesas">2 Medallon de Carne + Cheddar + Panceta + Papas
                     Fritas + Cebolla .C + Condimentos <span class="parrafo__preciosMenu">$690</span></p>
             </article>
         </section>
 
-        <picture class="main__pictureNosotros">
-            <img src="../img/flecha.svg" alt="flechahaciaabajo" class="picture__arrow">
+        <picture class="pictureArrow">
+            <img src="../img/flecha.svg" alt="flechahaciaabajo" class="pictureArrow__img">
         </picture>
 
-        <section class="main__sectionTresMenu container-fluid" data-aos="fade-up">
-            <picture class="sectionTres__pictureMenu">
-                <img src="../img/crisma__xl.png" alt="hamburguesaXL" class="pictureTres__imgMenu">
+        <section class="sectionTresMenu container-fluid" data-aos="fade-up">
+            <picture class="sectionTresMenu__picture">
+                <img src="../img/crisma__xl.png" alt="hamburguesaXL" class="sectionTresMenu__img">
             </picture>
-            <article class="sectionTres__articleMenu">
-                <h4 class="article__tituloMenu  titulosDeHamburguesas">¡Crisma XL!</h4>
+            <article class="sectionTresMenu__article">
+                <h4 class="titulosDeHamburguesas">¡Crisma XL!</h4>
             </article>
-            <article class="sectionTres__articleDosMenu">
-                <p class="article__parrafoMenu  parrafosDeHamburguesas">3 Medallon de Carne + Cheddar + Panceta + Papas
+            <article class="sectionTresMenu__articleDos">
+                <p class="parrafosDeHamburguesas">3 Medallon de Carne + Cheddar + Panceta + Papas
                     Fritas + Condimentos <span class="parrafo__preciosMenu">$800</span></p>
             </article>
         </section>
 
-        <picture class="main__pictureNosotros">
-            <img src="../img/flecha.svg" alt="flechahaciaabajo" class="picture__arrow">
+        <picture class="pictureArrow">
+            <img src="../img/flecha.svg" alt="flechahaciaabajo" class="pictureArrow__img">
         </picture>
 
-        <section class="main__sectionCuatroMenu container-fluid" data-aos="fade-up">
-            <picture class="sectionCuatro__pictureMenu">
-                <img src="../img/crisma__especial.png" alt="hamburguesaEspecial" class="pictureCuatro__imgMenu">
+        <section class="sectionCuatroMenu container-fluid" data-aos="fade-up">
+            <picture class="sectionCuatroMenu__picture">
+                <img src="../img/crisma__especial.png" alt="hamburguesaEspecial" class="sectionCuatroMenu__img">
             </picture>
-            <article class="sectionCuatro__articleMenu">
-                <h5 class="article__tituloMenu  titulosDeHamburguesas">¡Crisma Star!</h5>
+            <article class="sectionCuatroMenu__article">
+                <h5 class="titulosDeHamburguesas">¡Crisma Star!</h5>
             </article>
-            <article class="sectionCuatro__articleDosMenu">
-                <p class="article__parrafoMenu  parrafosDeHamburguesas">1 Medallon de Carne + Cheddar + Panceta + Papas
+            <article class="sectionCuatroMenu__articleDos">
+                <p class="parrafosDeHamburguesas">1 Medallon de Carne + Cheddar + Panceta + Papas
                     Fritas + Condimentos <span class="parrafo__preciosMenu">$1000</span></p>
             </article>
         </section>
 
-        <picture class="main__pictureNosotros">
-            <img src="../img/flecha.svg" alt="flechahaciaabajo" class="picture__arrow">
+        <picture class="pictureArrow">
+            <img src="../img/flecha.svg" alt="flechahaciaabajo" class="pictureArrow__img">
         </picture>
 
-        <section class="main__sectionCincoMenu container-fluid" data-aos="fade-down">
-            <h6 class="sectionCinco__tituloMenu  titulosDeHamburguesas">agregados</h6>
-            <article class="sectionCinco__articleMenu">
-                <ul class="article__ulMenu">
-                    <li class="ul__liMenu  parrafosDeHamburguesas">Cebolla Caramelizada <span
+        <section class="sectionCincoMenu container-fluid" data-aos="fade-down">
+            <h6 class="sectionCincoMenu__titulo  titulosDeHamburguesas">agregados</h6>
+            <article class="sectionCincoMenu__article">
+                <ul class="sectionCincoMenu__ul">
+                    <li class="sectionCincoMenu__li  parrafosDeHamburguesas">Cebolla Caramelizada <span
                             class="parrafo__preciosMenu">$80</span></li>
-                    <li class="ul__liMenu  parrafosDeHamburguesas">Cheddar <span class="parrafo__preciosMenu">$80</span>
+                    <li class="sectionCincoMenu__li  parrafosDeHamburguesas">Cheddar <span
+                            class="parrafo__preciosMenu">$80</span>
                     </li>
-                    <li class="ul__liMenu  parrafosDeHamburguesas">Tomate <span class="parrafo__preciosMenu">$50</span>
+                    <li class="sectionCincoMenu__li  parrafosDeHamburguesas">Tomate <span
+                            class="parrafo__preciosMenu">$50</span>
                     </li>
-                    <li class="ul__liMenu  parrafosDeHamburguesas">Lechuga <span class="parrafo__preciosMenu">$50</span>
+                    <li class="sectionCincoMenu__li  parrafosDeHamburguesas">Lechuga <span
+                            class="parrafo__preciosMenu">$50</span>
                     </li>
-                    <li class="ul__liMenu  parrafosDeHamburguesas">Huevo Frito <span
+                    <li class="sectionCincoMenu__li  parrafosDeHamburguesas">Huevo Frito <span
                             class="parrafo__preciosMenu">$60</span></li>
-                    <li class="ul__liMenu  parrafosDeHamburguesas">Barbacoa <span
+                    <li class="sectionCincoMenu__li  parrafosDeHamburguesas">Barbacoa <span
                             class="parrafo__preciosMenu">$60</span>
                     </li>
-                    <li class="ul__liMenu  parrafosDeHamburguesas">Jamon <span class="parrafo__preciosMenu">$60</span>
+                    <li class="sectionCincoMenu__li  parrafosDeHamburguesas">Jamon <span
+                            class="parrafo__preciosMenu">$60</span>
                     </li>
-                    <li class="ul__liMenu  parrafosDeHamburguesas">Queso <span class="parrafo__preciosMenu">$50</span>
+                    <li class="sectionCincoMenu__li  parrafosDeHamburguesas">Queso <span
+                            class="parrafo__preciosMenu">$50</span>
                     </li>
                 </ul>
             </article>
@@ -145,10 +150,10 @@
         <h6 class="footer__titulo">&copy;Derechos Reservados</h6>
         <div class="footer__div">
             <a href="https://www.instagram.com/crisma.burger" target="_blank" class="footer__link">
-                <img src="../img/icono__instagram.svg" alt="iconoDeInstagram" class="link__imgFooter">
+                <img src="../img/icono__instagram.svg" alt="iconoDeInstagram" class="footer__img">
             </a>
             <a href="https://wa.me/+5491157090208" target="_blank" class="footer__link">
-                <img src="../img/icono_whatsapp.svg" alt="iconoDeWhatsapp" class="link__imgFooter">
+                <img src="../img/icono_whatsapp.svg" alt="iconoDeWhatsapp" class="footer__img">
             </a>
         </div>
     </footer>
