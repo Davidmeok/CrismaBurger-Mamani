@@ -1,14 +1,11 @@
 .mainContacto {
     display: grid;
-    justify-items: center;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
 }
 
 .sectionUnoContacto {
-    display: grid;
-    width: 100%;
-    align-items: center;
+    @include grid (center, center);
     grid-template-columns: 2fr 3fr 2fr;
     grid-template-rows: auto;
     grid-template-areas:
@@ -16,7 +13,6 @@
 
     &__picture {
         grid-area: pictureContacto;
-        display: flex;
     }
 
     &__img {
@@ -29,16 +25,14 @@
 }
 
 .formContacto {
+    @include flex (column, center, center);
     grid-area: formContacto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     gap: 1rem;
 
     &__label {
-        color: #FFFFFF;
+        color: map-get($map: $colors, $key: secondary);
         font-size: 2rem;
-        border-bottom: #08FF00 solid 2px;
+        border-bottom: map-get($map: $colors, $key: border) solid 2px;
     }
 
     &__input {
@@ -59,7 +53,7 @@
 }
 
 .form-control {
-    width: 60%;
+    width: 100%;
     font-size: 1.5rem;
 }
 

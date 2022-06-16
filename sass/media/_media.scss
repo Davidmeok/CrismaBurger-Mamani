@@ -144,19 +144,6 @@
             "link   link";
     }
 
-    .divIndex__img {
-        width: 100%;
-    }
-
-    .divDosIndex {
-        align-items: center;
-    }
-
-    .divDosIndex__link {
-        justify-content: center;
-    }
-
-
     /* MEDIA DE MENU */
 
     .sectionUnoMenu {
@@ -233,7 +220,6 @@
     }
 
     .footer {
-        flex-direction: column;
         gap: 5rem;
         padding: 20rem;
     }

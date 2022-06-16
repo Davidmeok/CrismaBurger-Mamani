@@ -1,8 +1,11 @@
 .header {
+    @include grid (normal, center);
+    grid-template-columns: 2fr 5fr;
+    grid-template-rows: auto;
+    grid-template-areas: "headerlink nav";
+
     &__link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex (row, center, center);
         text-decoration: none;
         grid-area: headerlink;
         gap: 1rem;
@@ -14,11 +17,11 @@
     }
 
     &__titulo {
-        color: #ffffff;
+        color: map-get($map: $colors, $key: secondary);
         font-size: 3.2rem;
 
         &:hover {
-            color: #08ff00;
+            color: map-get($map: $colors, $key: hover);
         }
     }
 
@@ -39,27 +42,26 @@
 }
 
 .nav {
+    display: grid;
+    grid-area: nav;
+
     &__ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
+        @include flex (row, space-around, center);
     }
 
     &__li {
         list-style: none;
-        border-bottom: solid;
-        border-color: #08ff00;
+        border-bottom: map-get($map: $colors, $key: border) solid 2px;
     }
 
     &__link {
         text-decoration: none;
-        color: #ffffff;
+        color: map-get($map: $colors, $key: secondary);
         font-family: "Koulen", cursive;
         font-size: 2rem;
 
         &:hover {
-            color: #08ff00;
+            color: map-get($map: $colors, $key: hover);
         }
     }
 }

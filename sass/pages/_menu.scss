@@ -1,14 +1,12 @@
 .mainMenu {
-    display: grid;
+    @include grid (center, center);
     row-gap: 5rem;
-    justify-items: center;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
 }
 
 .sectionUnoMenu {
-    display: grid;
-    justify-items: center;
+    @include grid (center, normal);
     row-gap: 2rem;
     grid-template-columns: 2fr 3fr;
     grid-template-rows: auto;
@@ -38,25 +36,24 @@
 .titulosDeHamburguesas {
     font-size: 4.8rem;
     text-align: center;
-    font-family: 'Holtwood One SC', serif;
-    border-bottom: solid 5px;
-    border-color: #08FF00;
-    color: #FFFFFF;
+    font-family: $font-title;
+    border-bottom: map-get($map: $colors, $key: border) solid 5px;
+    color: map-get($map: $colors, $key: secondary);
 
     &:hover {
-        color: #08FF00;
+        color: map-get($map: $colors, $key: hover);
     }
 }
 
 .parrafosDeHamburguesas {
     font-size: 3rem;
     text-align: center;
-    color: #FFFFFF;
+    color: map-get($map: $colors, $key: secondary);
 }
 
 .parrafo {
     &__preciosMenu {
-        color: #08FF00;
+        color: map-get($map: $colors, $key: primary);
         font-size: 3rem;
     }
 }
@@ -69,8 +66,7 @@
 }
 
 .sectionDosMenu {
-    display: grid;
-    justify-items: center;
+    @include grid (center, normal);
     row-gap: 2rem;
     grid-template-columns: 3fr 2fr;
     grid-template-rows: auto;
@@ -98,11 +94,7 @@
 }
 
 .sectionTresMenu {
-    display: grid;
-    justify-items: center;
-    row-gap: 2rem;
-    grid-template-columns: 2fr 3fr;
-    grid-template-rows: auto;
+    @extend .sectionUnoMenu;
     grid-template-areas:
         "picture3Menu   titulo3Menu"
         "picture3Menu   parrafo3Menu";
@@ -127,11 +119,7 @@
 }
 
 .sectionCuatroMenu {
-    display: grid;
-    justify-items: center;
-    row-gap: 2rem;
-    grid-template-columns: 3fr 2fr;
-    grid-template-rows: auto;
+    @extend .sectionDosMenu;
     grid-template-areas:
         "titulo4Menu    picture4Menu"
         "parrafo4Menu   picture4Menu";
@@ -156,39 +144,28 @@
 }
 
 .sectionCincoMenu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex (column, normal, center);
     gap: 2rem;
 
     &__titulo {
         font-size: 4.8rem;
-        font-family: 'Holtwood One SC', serif;
-        border-bottom: solid 5px;
-        border-color: #08FF00;
-        color: #FFFFFF;
-    }
-
-    &__article {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        font-family: $font-title;
+        border-bottom: map-get($map: $colors, $key: border) solid 5px;
+        color: map-get($map: $colors, $key: secondary);
     }
 
     &__ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex (column, normal, center);
         list-style-type: none;
     }
 
     &__li {
         list-style: none;
         font-size: 3rem;
-        color: #FFFFFF;
+        color: map-get($map: $colors, $key: secondary);
 
         &:hover {
-            color: #08FF00;
+            color: map-get($map: $colors, $key: hover);
         }
     }
 }

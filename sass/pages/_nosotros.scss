@@ -1,15 +1,10 @@
 .mainNosotros {
-    display: grid;
-    row-gap: 5rem;
-    justify-items: center;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    @extend .mainMenu;
 }
 
 .sectionUnoNosotros {
-    display: grid;
+    @include grid (center, center);
     margin-top: 5rem;
-    justify-items: center;
     row-gap: 2rem;
     column-gap: 3rem;
     grid-template-columns: 2fr 3fr;
@@ -38,8 +33,7 @@
 }
 
 .sectionDosNosotros {
-    display: grid;
-    justify-items: center;
+    @include grid (center, center);
     row-gap: 10rem;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
@@ -48,10 +42,8 @@
 }
 
 .card {
+    @include flex (column, center, center);
     grid-area: avatar1;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     gap: 2rem;
     background-color: #0000;
     border: none;
@@ -62,13 +54,13 @@
 }
 
 .card-titulo {
-    color: #FFFFFF;
+    color: map-get($map: $colors, $key: secondary);
     font-size: 3rem;
-    font-family: 'Koulen', cursive;
-    border-bottom: #08FF00 solid 2px;
+    font-family: $font-description;
+    border-bottom: map-get($map: $colors, $key: border) solid 2px;
 
     &:hover {
-        color: #08FF00;
+        color: map-get($map: $colors, $key: hover);
     }
 }
 

@@ -1,14 +1,12 @@
 .mainEnvios {
-    display: grid;
-    justify-items: center;
+    @include grid (center, center);
     gap: 1rem;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
 }
 
 .sectionUnoEnvios {
-    display: grid;
-    justify-items: center;
+    @include grid (center, center);
     row-gap: 2rem;
     grid-template-columns: 2fr 3fr;
     grid-template-rows: auto;
@@ -36,21 +34,17 @@
 }
 
 .sectionDosEnvios {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex (column, center, center);
     gap: 4.5rem;
 
     &__titulo {
-        color: #FFFFFF;
+        color: map-get($map: $colors, $key: secondary);
         font-size: 3.2rem;
-        border-bottom: #08FF00 solid 2px;
+        border-bottom: map-get($map: $colors, $key: border) solid 2px;
     }
 
     &__article {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        @include flex (row, center, center);
         gap: 2rem;
     }
 }

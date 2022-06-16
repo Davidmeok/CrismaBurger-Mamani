@@ -1,16 +1,11 @@
 .mainPromos {
-    display: grid;
-    justify-items: center;
+    @include grid (center, center);
     grid-template-columns: 1fr;
     grid-template-rows: auto;
 }
 
 .sectionUnoPromos {
-    display: grid;
-    justify-items: center;
-    row-gap: 2rem;
-    grid-template-columns: 2fr 3fr;
-    grid-template-rows: auto;
+    @extend .sectionUnoMenu;
     grid-template-areas:
         "picturePromos  tituloPromos"
         "picturePromos  parrafoPromos";
@@ -36,11 +31,7 @@
 }
 
 .sectionDosPromos {
-    display: grid;
-    justify-items: center;
-    row-gap: 2rem;
-    grid-template-columns: 3fr 2fr;
-    grid-template-rows: auto;
+    @extend .sectionDosMenu;
     grid-template-areas:
         "titulo2Promos  picture2Promos"
         "parrafo2Promos picture2Promos";
