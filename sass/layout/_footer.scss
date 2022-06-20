@@ -1,6 +1,7 @@
 .footer {
     @include flex (column, center, center);
     padding: 10rem;
+    gap: 5rem;
     border-top: map-get($map: $colors, $key: border) solid 2px;
 
     &__titulo {
@@ -15,6 +16,7 @@
     }
 
     &__img {
-        width: 50px;
+        width: 100%;
+        max-width: 50px;
     }
 }

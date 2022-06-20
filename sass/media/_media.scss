@@ -1,6 +1,6 @@
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 1024px) {
+@include mediaq (1024px) {
     html {
         font-size: 8px;
     }
@@ -14,49 +14,56 @@
 
 /* 768 PX */
 
-@media screen and (max-width: 768px) {
+@include mediaq (768px) {
     html {
         font-size: 7px;
     }
 
     /* MENU DE HAMBURGUESA */
     .header {
-        justify-items: flex-start;
-        grid-template-columns: 3fr 1fr;
+        justify-items: start;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
         grid-template-areas:
             "headerlink menuburger"
-            "nav    nav"
+            "nav nav";
+        padding: 0 5rem 0 5rem;
+
+        &__titulo {
+            font-size: 3.2rem;
+        }
     }
 
     .nav {
         visibility: hidden;
         display: none;
+
+        &__ul {
+            height: 100%;
+            flex-direction: column;
+        }
+
+        &__link {
+            font-size: 2.5rem;
+        }
     }
 
-    .nav__ul {
-        height: 100%;
-        flex-direction: column;
+    .menuburger {
+        &__label {
+            display: block;
+            grid-area: menuburger;
+            justify-self: end;
+        }
+
+        &__input:checked~.nav {
+            visibility: visible;
+            display: block;
+            width: 100%;
+            height: 50vh;
+        }
+
     }
 
-    .nav__link {
-        font-size: 2.5rem;
-    }
-
-    .menuburger__label {
-        display: block;
-        grid-area: menuburger;
-        justify-self: center;
-    }
-
-    .menuburger__input:checked~.nav {
-        visibility: visible;
-        display: block;
-        background-image: url("../img/background_menuburger.png");
-        background-size: cover;
-        width: 100%;
-        height: 50vh;
-    }
 
     /* MEDIA DE INDEX */
 
@@ -65,10 +72,10 @@
         grid-template-areas:
             "informacion informacion"
             "picture picture";
-    }
 
-    .sectionUnoIndex__picture {
-        display: none;
+        &__picture {
+            display: none;
+        }
     }
 
     /* MEDIA DE NOSOTROS */
@@ -104,19 +111,19 @@
         grid-template-columns: 1fr;
         grid-template-areas:
             "formContacto";
+
+        &__picture,
+        &__pictureDos {
+            display: none;
+        }
     }
 
     .formContacto {
         gap: 2rem;
-    }
 
-    .sectionUnoContacto__picture,
-    .sectionUnoContacto__pictureDos {
-        display: none;
-    }
-
-    .formContacto__label {
-        font-size: 3rem;
+        &__label {
+            font-size: 3rem;
+        }
     }
 
     .form-control {
@@ -130,7 +137,7 @@
 
 /* 600 PX */
 
-@media screen and (max-width: 600px) {
+@include mediaq (600px) {
     html {
         font-size: 6px;
     }
@@ -208,7 +215,7 @@
 
 /* 480 PX */
 
-@media screen and (max-width: 480px) {
+@include mediaq (480px) {
     html {
         font-size: 5px;
     }
@@ -217,10 +224,5 @@
 
     .sectionUnoIndex__picture {
         display: none;
-    }
-
-    .footer {
-        gap: 5rem;
-        padding: 20rem;
     }
 }

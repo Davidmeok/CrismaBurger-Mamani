@@ -6,8 +6,9 @@
 }
 
 .sectionUnoEnvios {
-    @include grid (center, center);
+    @include grid (center, start);
     row-gap: 2rem;
+    column-gap: 3rem;
     grid-template-columns: 2fr 3fr;
     grid-template-rows: auto;
     grid-template-areas:
@@ -24,8 +25,7 @@
 
     &__article {
         grid-area: tituloEnvios;
-        display: flex;
-        align-items: flex-end;
+        align-self: end;
     }
 
     &__articleDos {

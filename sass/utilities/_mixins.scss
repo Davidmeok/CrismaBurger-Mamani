@@ -10,3 +10,9 @@
     justify-items: $justify;
     align-items: $align;
 }
+
+@mixin mediaq ($px) {
+    @media screen and (max-width: $px) {
+        @content
+    }
+}

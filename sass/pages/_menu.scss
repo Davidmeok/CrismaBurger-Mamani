@@ -8,6 +8,7 @@
 .sectionUnoMenu {
     @include grid (center, normal);
     row-gap: 2rem;
+    column-gap: 3rem;
     grid-template-columns: 2fr 3fr;
     grid-template-rows: auto;
     grid-template-areas:
@@ -68,6 +69,7 @@
 .sectionDosMenu {
     @include grid (center, normal);
     row-gap: 2rem;
+    column-gap: 3rem;
     grid-template-columns: 3fr 2fr;
     grid-template-rows: auto;
     grid-template-areas:

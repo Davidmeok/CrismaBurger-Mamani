@@ -5,20 +5,19 @@
     grid-template-areas: "headerlink nav";
 
     &__link {
-        @include flex (row, center, center);
+        @include flex (column, center, center);
         text-decoration: none;
         grid-area: headerlink;
-        gap: 1rem;
     }
 
     &__logo {
-        width: 100px;
-        min-width: 5px;
+        width: 100%;
+        max-width: 70px;
     }
 
     &__titulo {
         color: map-get($map: $colors, $key: secondary);
-        font-size: 3.2rem;
+        font-size: 2.4rem;
 
         &:hover {
             color: map-get($map: $colors, $key: hover);

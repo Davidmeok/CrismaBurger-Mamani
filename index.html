@@ -17,16 +17,18 @@
 </head>
 
 <body class="bg-dark">
-    <!-- Barra de navegacion -->
-    <header class="header sticky-top bg-dark">
+    <!-- HEADER -->
+    <header class="header pt-3 pb-1 sticky-top bg-dark">
         <a href="index.html" class="header__link animate__animated animate__slideInLeft">
             <img src="./img/logoCrismaBurger.png" alt="logo-crisma-burger" class="header__logo">
             <h1 class="header__titulo">Crisma Burger</h1>
         </a>
+        <!-- MENU DE HAMBURGUESA -->
         <label for="menuBurger" class="menuburger__label">
             <img src="./img/menu_burger.svg" alt="menudehamburguesa" class="menuburger__img">
         </label>
         <input type="checkbox" name="menuBurger" id="menuBurger" class="menuburger__input">
+        <!-- NAVEGACION -->
         <nav class="nav animate__animated animate__slideInRight">
             <ul class="nav__ul">
                 <li class="nav__li">
@@ -47,15 +49,17 @@
             </ul>
         </nav>
     </header>
-    <!-- Pantalla de inicio -->
-    <main class="main mt-5 mb-5">
+    <!-- PANTALLA DE INICIO -->
+    <main class="main py-4">
+        <!-- SECTION UNO -->
         <section class="sectionUnoIndex">
+            <!-- CAROUSEL -->
             <picture id="carouselExampleInterval"
                 class="sectionUnoIndex__picture carousel slide animate__animated animate__slideInLeft"
                 data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="5000">
-                        <img src="./img/crisma__especial-index.png" class="d-block w-100" alt="HamburguesaNegra">
+                        <img src="./img/crisma__especial.png" class="d-block w-100" alt="HamburguesaNegra">
                     </div>
                     <div class="carousel-item" data-bs-interval="5000">
                         <img src="./img/promo__dos.png" class="d-block w-100" alt="PromoDeHamburguesa">
@@ -72,10 +76,11 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </picture>
+            <!-- INFORMACION DE INICIO -->
             <article class="articleUnoIndex animate__animated animate__slideInRight">
                 <h2 class="articleUnoIndex__titulo">¡Crisma Burger!</h2>
                 <p class="articleUnoIndex__parrafo">ordena tu crisma burger</p>
-                <div class="divIndex p-5">
+                <div class="divIndex px-5">
                     <img src="./img/article__img.svg" alt="publicidad" class="divIndex__img">
                     <div class="divDosIndex">
                         <h3 class="divDosIndex__titulo">encontranos en</h3>
@@ -88,9 +93,10 @@
             </article>
         </section>
     </main>
-    <!-- Pie de pagina -->
+    <!-- FOOTER -->
     <footer class="footer bg-dark">
         <h6 class="footer__titulo">&copy;Derechos Reservados</h6>
+        <!-- REDES SOCIALES -->
         <div class="footer__div">
             <a href="https://www.instagram.com/crisma.burger" target="_blank" class="footer__link">
                 <img src="./img/icono__instagram.svg" alt="iconoDeInstagram" class="footer__img">
