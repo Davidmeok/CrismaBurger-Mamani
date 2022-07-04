@@ -85,6 +85,7 @@ body {
   grid-template-areas: "preguntasFooter linksFooter";
   padding: 5rem 1rem 5rem 1rem;
   margin: 50px 0 0 0;
+  gap: 3rem;
   border-top: #08ff00 solid 2px; }
   .footer__article, .footer__articleDos {
     grid-area: preguntasFooter;
@@ -96,7 +97,7 @@ body {
   .footer__link {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.9);
-    font-size: 1.4rem; }
+    font-size: 2rem; }
     .footer__link:hover {
       color: #08ff00; }
   .footer__articleDos {
@@ -129,7 +130,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90vh;
   gap: 1rem; }
   .sectionUnoIndex__titulo {
     align-self: start;
@@ -474,7 +474,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: stretch;
+    align-items: baseline;
     gap: 3rem; }
 
 .iconEnvios {
@@ -488,9 +488,10 @@ body {
   align-items: center; }
 
 .parrafosDeInformacion {
-  font-size: 1.4rem;
+  font-size: 2rem;
   line-height: 1.3;
   text-align: center;
+  font-family: "Koulen", cursive;
   color: rgba(255, 255, 255, 0.9); }
 
 .sectionTresEnvios {
@@ -566,12 +567,12 @@ body {
 /* MEDIA QUERIES */
 @media screen and (max-width: 1024px) {
   html {
-    font-size: 8px; } }
+    font-size: 9px; } }
 
 /* 768 PX */
 @media screen and (max-width: 768px) {
   html {
-    font-size: 7px; }
+    font-size: 8.5px; }
   /* MENU DE HAMBURGUESA */
   .header {
     justify-items: start;
@@ -617,7 +618,7 @@ body {
 /* 600 PX */
 @media screen and (max-width: 600px) {
   html {
-    font-size: 6px; }
+    font-size: 8px; }
   /* MEDIA DE INDEX */
   .sectionUnoIndex__titulo {
     align-self: center; }
@@ -663,6 +664,6 @@ body {
 /* 480 PX */
 @media screen and (max-width: 480px) {
   html {
-    font-size: 5px; }
-  .sectionUnoIndex__titulo {
-    padding: 75px 0 0 0; } }
+    font-size: 7.5px; }
+  .sectionDosEnvios__article, .sectionCuatroEnvios__article {
+    align-items: center; } }

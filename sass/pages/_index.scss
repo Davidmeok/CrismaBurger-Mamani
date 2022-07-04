@@ -7,7 +7,6 @@
 
 .sectionUnoIndex {
     @include flex (column, center, center);
-    height: 90vh;
     gap: 1rem;
 
     &__titulo {

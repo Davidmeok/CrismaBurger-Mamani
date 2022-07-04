@@ -2,7 +2,7 @@
 
 @include mediaq (1024px) {
     html {
-        font-size: 8px;
+        font-size: 9px;
     }
 }
 
@@ -10,7 +10,7 @@
 
 @include mediaq (768px) {
     html {
-        font-size: 7px;
+        font-size: 8.5px;
     }
 
     /* MENU DE HAMBURGUESA */
@@ -94,7 +94,7 @@
 
 @include mediaq (600px) {
     html {
-        font-size: 6px;
+        font-size: 8px;
     }
 
     /* MEDIA DE INDEX */
@@ -225,12 +225,12 @@
 
 @include mediaq (480px) {
     html {
-        font-size: 5px;
+        font-size: 7.5px;
     }
 
-    // MEDIA DE INDEX
+    // MEDIA ENVIOS
 
-    .sectionUnoIndex__titulo {
-        padding: 75px 0 0 0;
+    .sectionDosEnvios__article {
+        align-items: center
     }
 }
