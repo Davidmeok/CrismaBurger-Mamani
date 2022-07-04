@@ -586,8 +586,13 @@ body {
     visibility: hidden;
     display: none; }
     .nav__ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       height: 100%;
-      flex-direction: column; }
+      margin-top: 3rem;
+      gap: 7rem; }
     .nav__link {
       font-size: 3rem; }
   .menuburger__label {

@@ -32,8 +32,10 @@
         display: none;
 
         &__ul {
+            @include flex (column, center, center);
             height: 100%;
-            flex-direction: column;
+            margin-top: 3rem;
+            gap: 7rem;
         }
 
         &__link {
