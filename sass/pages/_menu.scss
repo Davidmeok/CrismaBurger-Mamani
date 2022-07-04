@@ -5,11 +5,35 @@
     grid-template-rows: auto;
 }
 
+.banner {
+    background-image: url("../img/bannermenu.png");
+    @include parallax;
+    @include flex (column, center, center);
+
+    &__titulo {
+        font-size: 10rem;
+        text-align: center;
+        text-shadow: 0 0 20px map-get($map: $colors, $key: four);
+        color: map-get($map: $colors, $key: secondary);
+    }
+
+    &__icon {
+        font-size: 10rem;
+        color: map-get($map: $colors, $key: primary);
+    }
+
+}
+
+.banner--agregados {
+    background-image: url("../img/banneragregados.png")
+}
+
 .sectionUnoMenu {
-    @include grid (center, normal);
+    @include grid (center, center);
+    min-height: 75vh;
     row-gap: 2rem;
-    column-gap: 3rem;
-    grid-template-columns: 2fr 3fr;
+    column-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
         "pictureMenu  tituloMenu"
@@ -21,33 +45,30 @@
 
     &__img {
         width: 100%;
+        border-radius: 50px;
     }
 
     &__article {
         grid-area: tituloMenu;
-        display: flex;
-        align-items: flex-end;
+        align-self: end;
     }
 
     &__articleDos {
         grid-area: parrafoMenu;
+        align-self: start;
     }
 }
 
-.titulosDeHamburguesas {
-    font-size: 4.8rem;
+.tittle {
+    font-size: map-get($map: $font-size, $key: 4rem);
     text-align: center;
+    background-color: #08FF00;
     font-family: $font-title;
-    border-bottom: map-get($map: $colors, $key: border) solid 5px;
-    color: map-get($map: $colors, $key: secondary);
-
-    &:hover {
-        color: map-get($map: $colors, $key: hover);
-    }
+    color: map-get($map: $colors, $key: terciary);
 }
 
 .parrafosDeHamburguesas {
-    font-size: 3rem;
+    font-size: map-get($map: $font-size, $key: 24rem);
     text-align: center;
     color: map-get($map: $colors, $key: secondary);
 }
@@ -59,18 +80,17 @@
     }
 }
 
-.pictureArrow {
-    &__img {
-        width: 100%;
-        max-width: 40px;
-    }
+.iconArrow {
+    font-size: 4.8rem;
+    color: map-get($map: $colors, $key: primary);
 }
 
 .sectionDosMenu {
-    @include grid (center, normal);
+    @include grid (center, center);
+    min-height: 75vh;
     row-gap: 2rem;
-    column-gap: 3rem;
-    grid-template-columns: 3fr 2fr;
+    column-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
         "titulo2Menu    picture2Menu"
@@ -82,16 +102,17 @@
 
     &__img {
         width: 100%;
+        border-radius: 50px;
     }
 
     &__article {
         grid-area: titulo2Menu;
-        display: flex;
-        align-items: flex-end;
+        align-self: end;
     }
 
     &__articleDos {
         grid-area: parrafo2Menu;
+        align-self: start;
     }
 }
 
@@ -107,16 +128,17 @@
 
     &__img {
         width: 100%;
+        border-radius: 50px;
     }
 
     &__article {
         grid-area: titulo3Menu;
-        display: flex;
-        align-items: flex-end;
+        align-self: end;
     }
 
     &__articleDos {
         grid-area: parrafo3Menu;
+        align-self: start;
     }
 }
 
@@ -132,29 +154,75 @@
 
     &__img {
         width: 100%;
+        border-radius: 50px;
     }
 
     &__article {
         grid-area: titulo4Menu;
-        display: flex;
-        align-items: flex-end;
+        align-self: end;
     }
 
     &__articleDos {
         grid-area: parrafo4Menu;
+        align-self: start;
     }
 }
 
 .sectionCincoMenu {
+    @extend .sectionUnoMenu;
+    grid-template-areas:
+        "picture5Menu   titulo5Menu"
+        "picture5Menu   parrafo5Menu";
+
+    &__picture {
+        grid-area: picture5Menu;
+    }
+
+    &__img {
+        width: 100%;
+        border-radius: 50px;
+    }
+
+    &__article {
+        grid-area: titulo5Menu;
+        align-self: end;
+    }
+
+    &__articleDos {
+        grid-area: parrafo5Menu;
+        align-self: start;
+    }
+}
+
+.sectionSeisMenu {
+    @extend .sectionDosMenu;
+    grid-template-areas:
+        "titulo6Menu    picture6Menu"
+        "parrafo6Menu   picture6Menu";
+
+    &__picture {
+        grid-area: picture6Menu;
+    }
+
+    &__img {
+        width: 100%;
+        border-radius: 50px;
+    }
+
+    &__article {
+        grid-area: titulo6Menu;
+        align-self: end;
+    }
+
+    &__articleDos {
+        grid-area: parrafo6Menu;
+        align-self: start;
+    }
+}
+
+.sectionSieteMenu {
     @include flex (column, normal, center);
     gap: 2rem;
-
-    &__titulo {
-        font-size: 4.8rem;
-        font-family: $font-title;
-        border-bottom: map-get($map: $colors, $key: border) solid 5px;
-        color: map-get($map: $colors, $key: secondary);
-    }
 
     &__ul {
         @include flex (column, normal, center);
@@ -162,8 +230,6 @@
     }
 
     &__li {
-        list-style: none;
-        font-size: 3rem;
         color: map-get($map: $colors, $key: secondary);
 
         &:hover {

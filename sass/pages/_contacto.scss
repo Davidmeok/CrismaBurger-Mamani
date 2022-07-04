@@ -1,60 +1,57 @@
 .mainContacto {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    @extend .mainMenu;
+}
+
+.banner--contacto {
+    background-image: url("../img/bannercontacto.png")
 }
 
 .sectionUnoContacto {
-    @include grid (center, center);
-    grid-template-columns: 2fr 3fr 2fr;
-    grid-template-rows: auto;
+    @extend .sectionUnoMenu;
     grid-template-areas:
-        "pictureContacto formContacto picture2Contacto";
+        "pictureContacto formContacto";
 
     &__picture {
         grid-area: pictureContacto;
+        background-color: #08FF00;
     }
 
     &__img {
         width: 100%;
-    }
-
-    &__pictureDos {
-        grid-area: picture2Contacto;
+        mix-blend-mode: multiply;
+        filter: grayscale(100%);
     }
 }
 
 .formContacto {
     @include flex (column, center, center);
     grid-area: formContacto;
-    gap: 1rem;
+    width: 100%;
+    gap: 1.4rem;
 
     &__label {
-        color: map-get($map: $colors, $key: secondary);
         font-size: 2rem;
-        border-bottom: map-get($map: $colors, $key: border) solid 2px;
+        padding: 1px 5px 1px 5px;
     }
 
     &__input {
-        border-radius: 100px;
-    }
-
-    &__textarea {
-        border-radius: 20px;
+        border-radius: 5px;
+        background-color: map-get($map: $colors, $key: secondary);
         border: none;
-        padding: 0.5rem;
+        outline: none;
+        font-size: 2rem;
+        width: 50%;
+        padding: 1px 5px 1px 5px;
+
+        &:focus {
+            outline: #08FF00 2px solid;
+        }
     }
 
     &__buttons {
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
+        @include flex (row, center, center);
+        gap: 3rem;
     }
-}
-
-.form-control {
-    width: 100%;
-    font-size: 1.5rem;
 }
 
 .btn {

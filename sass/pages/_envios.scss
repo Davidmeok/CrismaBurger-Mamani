@@ -1,16 +1,13 @@
 .mainEnvios {
-    @include grid (center, center);
-    gap: 1rem;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    @extend .mainMenu;
+}
+
+.banner--envios {
+    background-image: url("../img/bannerenvios.png")
 }
 
 .sectionUnoEnvios {
-    @include grid (center, start);
-    row-gap: 2rem;
-    column-gap: 3rem;
-    grid-template-columns: 2fr 3fr;
-    grid-template-rows: auto;
+    @extend .sectionUnoMenu;
     grid-template-areas:
         "pictureEnvios  tituloEnvios"
         "pictureEnvios  parrafoEnvios";
@@ -30,21 +27,51 @@
 
     &__articleDos {
         grid-area: parrafoEnvios;
+        align-self: start;
     }
 }
 
 .sectionDosEnvios {
     @include flex (column, center, center);
-    gap: 4.5rem;
+    min-height: 25vh;
+    gap: 5rem;
 
-    &__titulo {
-        color: map-get($map: $colors, $key: secondary);
-        font-size: 3.2rem;
-        border-bottom: map-get($map: $colors, $key: border) solid 2px;
+    &__article {
+        @include flex (row, center, stretch);
+        gap: 3rem;
     }
+}
+
+.iconEnvios {
+    font-size: 5rem;
+    gap: 3rem;
+    max-width: 200px;
+    color: map-get($map: $colors, $key: secondary);
+    @include flex (column, center, center);
+}
+
+.parrafosDeInformacion {
+    font-size: 1.4rem;
+    line-height: 1.3;
+    text-align: center;
+    color: map-get($map: $colors, $key: secondary);
+}
+
+.sectionTresEnvios {
+    @include flex (column, center, center);
+    gap: 4.5rem;
 
     &__article {
         @include flex (row, center, center);
         gap: 2rem;
+    }
+}
+
+.sectionCuatroEnvios {
+    @extend .sectionDosEnvios;
+    height: auto;
+
+    &__article {
+        @extend .sectionDosEnvios__article;
     }
 }

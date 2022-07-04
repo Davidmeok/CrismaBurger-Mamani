@@ -9,19 +9,22 @@
         content="¡Aprovecha de las ofertas y ordena tus Crisma Burger, que te la llevamos a la puerta de tu casa. Desde hamburguesas simples hasta combos triples!">
     <meta name="keywords" content="burger, crisma, comida, foot, hamburguesas, tienda, comida rapida, big, ofertas">
     <title>Crisma Burger | Home</title>
+    <script src="https://kit.fontawesome.com/eb7f92c8b2.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/translated.css">
-    <link rel="shortcut icon" href="./img/logoCrismaBurger.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/logocrismaburger.svg" type="image/x-icon">
 </head>
 
-<body class="bg-dark">
+<body class="body">
     <!-- HEADER -->
-    <header class="header pt-3 pb-1 sticky-top bg-dark">
-        <a href="index.html" class="header__link animate__animated animate__slideInLeft">
-            <img src="./img/logoCrismaBurger.png" alt="logo-crisma-burger" class="header__logo">
-            <h1 class="header__titulo">Crisma Burger</h1>
+    <header class="header pt-3 pb-1">
+        <a href="index.html" class="header__link ">
+            <img src="./img/logocrismaburger.svg" alt="logocrismaburger" class="header__logo" data-aos="fade-up"
+                data-aos-delay="100">
+            <h1 class="header__titulo" data-aos="fade-up" data-aos-delay="300">Crisma Burger</h1>
         </a>
         <!-- MENU DE HAMBURGUESA -->
         <label for="menuBurger" class="menuburger__label">
@@ -29,83 +32,69 @@
         </label>
         <input type="checkbox" name="menuBurger" id="menuBurger" class="menuburger__input">
         <!-- NAVEGACION -->
-        <nav class="nav animate__animated animate__slideInRight">
+        <nav class="nav ">
             <ul class="nav__ul">
-                <li class="nav__li">
-                    <a href="pages/menu.html" class="nav__link">Menu</a>
+                <li class="nav__li" data-aos="fade-up" data-aos-delay="500">
+                    <a href="./pages/menu.html" class="nav__link">Menu</a>
                 </li>
-                <li class="nav__li">
-                    <a href="pages/promos.html" class="nav__link">Promos</a>
+                <li class="nav__li" data-aos="fade-up" data-aos-delay="700">
+                    <a href="./pages/promos.html" class="nav__link">Promos</a>
                 </li>
-                <li class="nav__li">
-                    <a href="pages/nosotros.html" class="nav__link">Nosotros</a>
+                <li class="nav__li" data-aos="fade-up" data-aos-delay="900">
+                    <a href="./pages/nosotros.html" class="nav__link">Nosotros</a>
                 </li>
-                <li class="nav__li">
-                    <a href="pages/envios.html" class="nav__link">Envios</a>
+                <li class="nav__li" data-aos="fade-up" data-aos-delay="1100">
+                    <a href="./pages/envios.html" class="nav__link">Envios</a>
                 </li>
-                <li class="nav__li">
-                    <a href="pages/contacto.html" class="nav__link">Contacto</a>
+                <li class="nav__li" data-aos="fade-up" data-aos-delay="1300">
+                    <a href="./pages/contacto.html" class="nav__link">Contacto</a>
                 </li>
             </ul>
         </nav>
     </header>
     <!-- PANTALLA DE INICIO -->
-    <main class="main py-4">
+    <main class="main">
         <!-- SECTION UNO -->
-        <section class="sectionUnoIndex">
-            <!-- CAROUSEL -->
-            <picture id="carouselExampleInterval"
-                class="sectionUnoIndex__picture carousel slide animate__animated animate__slideInLeft"
-                data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="5000">
-                        <img src="./img/crisma__especial.png" class="d-block w-100" alt="HamburguesaNegra">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="5000">
-                        <img src="./img/promo__dos.png" class="d-block w-100" alt="PromoDeHamburguesa">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </picture>
+        <section class="sectionUnoIndex px-4" data-aos="fade-up" data-aos-duration="1500">
             <!-- INFORMACION DE INICIO -->
-            <article class="articleUnoIndex animate__animated animate__slideInRight">
-                <h2 class="articleUnoIndex__titulo">¡Crisma Burger!</h2>
-                <p class="articleUnoIndex__parrafo">ordena tu crisma burger</p>
-                <div class="divIndex px-5">
-                    <img src="./img/article__img.svg" alt="publicidad" class="divIndex__img">
-                    <div class="divDosIndex">
-                        <h3 class="divDosIndex__titulo">encontranos en</h3>
-                        <a href="https://www.instagram.com/crisma.burger" class="divDosIndex__link" target="_blank">
-                            <img src="./img/icono__instagram.svg" alt="logoDeInstagram" class="divDosIndex__img">
-                            <h4 class="divDosIndex__instagram">crisma.burger</h4>
-                        </a>
-                    </div>
-                </div>
-            </article>
+            <h2 class="sectionUnoIndex__titulo">¡Crisma Burger!</h2>
+            <p class="sectionUnoIndex__parrafo">ordena tu crisma burger</p>
+            <!-- BOTON DE INICIO -->
+            <a href="./pages/menu.html" class="sectionUnoIndex__btn">
+                <button class="btn btn-outline-success">Ofertas</button>
+            </a>
         </section>
     </main>
     <!-- FOOTER -->
-    <footer class="footer bg-dark">
-        <h6 class="footer__titulo">&copy;Derechos Reservados</h6>
-        <!-- REDES SOCIALES -->
-        <div class="footer__div">
-            <a href="https://www.instagram.com/crisma.burger" target="_blank" class="footer__link">
-                <img src="./img/icono__instagram.svg" alt="iconoDeInstagram" class="footer__img">
-            </a>
-            <a href="https://wa.me/+5491157090208" target="_blank" class="footer__link">
-                <img src="./img/icono_whatsapp.svg" alt="iconoDeWhatsapp" class="footer__img">
-            </a>
-        </div>
+    <footer class="footer">
+        <!-- PREGUNTAS FRECUENTES -->
+        <article class="footer__article">
+            <a href="./pages/nosotros.html" class="footer__link">¿Como hago un pedido?</a>
+            <a href="./pages/nosotros.html" class="footer__link">¿Que metodos de pago aceptan?</a>
+            <a href="./pages/nosotros.html" class="footer__link">¿A que zona llegan? ¿Haces envios gratis?</a>
+            <a href="./pages/nosotros.html" class="footer__link">¿Como me comunico con ustedes? ¿Tienen Instagram?</a>
+            <a href="./pages/nosotros.html" class="footer__link">¿Cuanto de demora tienen los envios?</a>
+        </article>
+        <!-- COPYRIGHT -->
+        <article class="footer__articleDos">
+            <h6 class="footer__titulo">&copy;Crisma Burger 2022 | Creado por <span class="footer__span"><a
+                        href="https://www.instagram.com/davidmeok" class="footer__me"
+                        target="_blank">davidmeok</a></span></h6>
+            <!-- REDES SOCIALES -->
+            <div class="footer__div">
+                <a href="https://www.instagram.com/crisma.burger" target="_blank" class="footer__link">
+                    <i class="fa-brands fa-instagram  footer__icon"></i>
+                </a>
+                <a href="https://wa.me/+5491157090208" target="_blank" class="footer__link">
+                    <i class="fa-brands fa-whatsapp  footer__icon"></i>
+                </a>
+            </div>
+        </article>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: "true" });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>

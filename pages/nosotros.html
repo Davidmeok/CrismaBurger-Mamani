@@ -9,20 +9,22 @@
     <meta name="keywords"
         content="quienes somos, sobre nosotros, nuestro servicio, crisma burger, emprendedores, fundadores, cristian perez, matias ayala, emprendimiento, objetivos, calidad">
     <title>Crisma Burger | Nosotros</title>
+    <script src="https://kit.fontawesome.com/eb7f92c8b2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/translated.css">
-    <link rel="shortcut icon" href="../img/logoCrismaBurger.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/logocrismaburger.svg" type="image/x-icon">
 </head>
 
-<body class="bg-dark">
+<body class="bg-black">
     <!-- HEADER -->
-    <header class="header pt-3 pb-1 sticky-top bg-dark">
-        <a href="../index.html" class="header__link animate__animated animate__slideInLeft">
-            <img src="../img/logoCrismaBurger.png" alt="logo-crisma-burger" class="header__logo">
-            <h1 class="header__titulo">Crisma Burger</h1>
+    <header class="header pt-3 pb-1">
+        <a href="../index.html" class="header__link">
+            <img src="../img/logocrismaburger.svg" alt="logocrismaburger" class="header__logo" data-aos="fade-up"
+                data-aos-delay="100">
+            <h1 class="header__titulo" data-aos="fade-up" data-aos-delay="300">Crisma Burger</h1>
         </a>
         <!-- MENU DE HAMBURGUESA -->
         <label for="menuBurger" class="menuburger__label">
@@ -30,39 +32,49 @@
         </label>
         <input type="checkbox" name="menuBurger" id="menuBurger" class="menuburger__input">
         <!-- NAVEGACION -->
-        <nav class="nav animate__animated animate__slideInRight">
+        <nav class="nav">
             <ul class="nav__ul">
-                <li class="nav__li">
+                <li class="nav__li" data-aos="fade-up" data-aos-delay="500">
                     <a href="menu.html" class="nav__link">Menu</a>
                 </li>
-                <li class="nav__li">
+                <li class="nav__li" data-aos="fade-up" data-aos-delay="700">
                     <a href="promos.html" class="nav__link">Promos</a>
                 </li>
-                <li class="nav__li">
-                    <a href="nosotros.html" class="nav__link">Nosotros</a>
+                <li class="nav__li" data-aos="fade-up" data-aos-delay="900">
+                    <a href="nosotros.html" class="nav__link" style="color:#08ff00;">Nosotros</a>
                 </li>
-                <li class="nav__li">
+                <li class="nav__li" data-aos="fade-up" data-aos-delay="1100">
                     <a href="envios.html" class="nav__link">Envios</a>
                 </li>
-                <li class="nav__li">
+                <li class="nav__li" data-aos="fade-up" data-aos-delay="1300">
                     <a href="contacto.html" class="nav__link">Contacto</a>
                 </li>
             </ul>
         </nav>
     </header>
     <!-- PANTALLA DE INICIO -->
-    <main class="mainNosotros p-5">
+    <main id="preguntasnosotros" class="mainNosotros">
+        <!-- BANNER NOSOTROS -->
+        <div class="banner  banner--nosotros">
+            <h2 class="banner__titulo" data-aos="fade-up" data-aos-duration="1500">Nosotros</h2>
+            <picture class="banner__picture">
+                <a href="#bannernosotros">
+                    <i class="fa-solid fa-angle-down banner__icon" data-aos="fade-up" data-aos-duration="1500"></i>
+                </a>
+            </picture>
+        </div>
         <!-- SECTION UNO -->
-        <section class="sectionUnoNosotros container-fluid">
+        <section id="bannernosotros" class="sectionUnoNosotros container-fluid" data-aos="fade-up"
+            data-aos-duration="2500">
             <!-- IMAGEN -->
-            <picture class="sectionUnoNosotros__picture animate__animated animate__slideInLeft">
-                <img src="../img/imagen__nosotros.svg" alt="ilustracionNosotros" class="sectionUnoNosotros__img">
+            <picture class="sectionUnoNosotros__picture">
+                <img src="../img/imagen__nosotros.svg" alt="ilustracion" class="sectionUnoNosotros__img">
             </picture>
             <!-- INFORMACION -->
-            <article class="sectionUnoNosotros__article animate__animated animate__slideInRight">
-                <h2 class="titulosDeHamburguesas">¿Quienes Somos?</h2>
+            <article class="sectionUnoNosotros__article">
+                <h3 class="tittle">¿Quienes Somos?</h3>
             </article>
-            <article class="sectionUnoNosotros__articleDos animate__animated animate__slideInRight">
+            <article class="sectionUnoNosotros__articleDos">
                 <p class="parrafosDeHamburguesas">somos 2 amigos emprendedores y fundadores de
                     lo que actualmente se
                     llama Crisma Burger en busca de ofrecer un servicio de alta calidad hacia nuestros clientes.
@@ -70,44 +82,144 @@
             </article>
         </section>
         <!-- FLECHA -->
-        <picture class="pictureArrow">
-            <img src="../img/flecha.svg" alt="flechahaciaabajo" class="pictureArrow__img">
+        <picture>
+            <i class="fa-solid fa-angles-down  iconArrow"></i>
         </picture>
         <!-- SECTION DOS -->
-        <section class="sectionDosNosotros container-fluid" data-aos="fade-up">
+        <section class="sectionDosNosotros container" data-aos="fade-up" data-aos-duration="2500">
             <!-- CARTAS DE PRESENTACION -->
             <article class="card">
-                <img src="../img/avatar__nosotros.svg" class="card-img" alt="imagenFundador">
-                <h3 class="card-titulo">Cristian Perez</h3>
+                <img src="../img/avatar__nosotros.svg" class="card-img" alt="fundador">
+                <h4 class="card-titulo">Cristian Perez</h4>
                 <a href="https://www.instagram.com/chriistiaan_01/" target="_blank" alt="urlainstagram"
                     class="btn btn-outline-success">@chriistiaan_01</a>
             </article>
             <article class="card card-2">
-                <img src="../img/avatar__nosotros.svg" class="card-img" alt="imagenFundador">
-                <h4 class="card-titulo">Matias Ayala</h4>
-                <a href="https://www.instagram.com/matias_osx/" target="_blank" alt="urlainstagram"
+                <img src="../img/avatar__nosotros.svg" class="card-img" alt="fundador">
+                <h5 class="card-titulo">Matias Ayala</h5>
+                <a href="https://www.instagram.com/_.matiassj/" target="_blank" alt="urlainstagram"
                     class="btn btn-outline-success">@matias_osx</a>
+            </article>
+        </section>
+        <!-- FLECHA -->
+        <picture>
+            <i class="fa-solid fa-angles-down  iconArrow"></i>
+        </picture>
+        <!-- SECTION TRES -->
+        <section class="sectionTresNosotros" data-aos="fade-up" data-aos-duration="2000">
+            <h6 class="subtitle">¿Tenes dudas? Preguntas Frecuentes</h6>
+            <!-- PREGUNTAS FRECUENTES -->
+            <article class="accordion accordion-flush container-fluid" id="accordionFlushExample">
+                <!-- PREGUNTA 1 -->
+                <div class="accordion-item">
+                    <h6 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#pregunta1" aria-expanded="false" aria-controls="pregunta1"
+                            data-aos="fade-up" data-aos-delay="100">
+                            - ¿Como hago un pedido?
+                        </button>
+                    </h6>
+                    <div id="pregunta1" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Mira nuestro catalogo, elegi y escribinos por WhatsApp para
+                            anotar tu
+                            pedido.</div>
+                    </div>
+                </div>
+                <!-- PREGUNTA 2 -->
+                <div class="accordion-item">
+                    <h6 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#pregunta2" aria-expanded="false" aria-controls="pregunta2"
+                            data-aos="fade-up" data-aos-delay="300">
+                            - ¿Que metodos de pago aceptan?
+                        </button>
+                    </h6>
+                    <div id="pregunta2" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Aceptamos efectivo, Visa, Mastercard, Paypal y transfencia.</div>
+                    </div>
+                </div>
+                <!-- PREGUNTA 3 -->
+                <div class="accordion-item">
+                    <h6 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#pregunta3" aria-expanded="false" aria-controls="pregunta3"
+                            data-aos="fade-up" data-aos-delay="500">
+                            - ¿A que zona llegan? ¿Hacen envios gratis?
+                        </button>
+                    </h6>
+                    <div id="pregunta3" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Llegamos a zonas cercanas a Pontevedra, mas informacion en la
+                            seccion de Envios.</div>
+                    </div>
+                </div>
+                <!-- PREGUNTA 4 -->
+                <div class="accordion-item">
+                    <h6 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#pregunta4" aria-expanded="false" aria-controls="pregunta4"
+                            data-aos="fade-up" data-aos-delay="700">
+                            - ¿Como me comunico con ustedes? ¿Tienen Instagram?
+                        </button>
+                    </h6>
+                    <div id="pregunta4" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Tenemos un formulario en la seccion de contacto para que nos dejes
+                            tu
+                            comentario o podes escribinos por WhatsApp. Si, nuestras redes se encuentran al final de
+                            cada
+                            pagina.</div>
+                    </div>
+                </div>
+                <!-- PREGUNTA 5 -->
+                <div class="accordion-item">
+                    <h6 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#pregunta5" aria-expanded="false" aria-controls="pregunta5"
+                            data-aos="fade-up" data-aos-delay="900">
+                            - ¿Cuanto de demora tienen los envios?
+                        </button>
+                    </h6>
+                    <div id="pregunta5" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Tienen aproximadamente 25 minutos de demora dependiendo tu zona.
+                        </div>
+                    </div>
+                </div>
             </article>
         </section>
     </main>
     <!-- FOOTER -->
-    <footer class="footer bg-dark">
-        <h6 class="footer__titulo">&copy;Derechos Reservados</h6>
-        <!-- REDES SOCIALES -->
-        <div class="footer__div">
-            <a href="https://www.instagram.com/crisma.burger" target="_blank" class="footer__link">
-                <img src="../img/icono__instagram.svg" alt="iconoDeInstagram" class="footer__img">
-            </a>
-            <a href="https://wa.me/+5491157090208" target="_blank" class="footer__link">
-                <img src="../img/icono_whatsapp.svg" alt="iconoDeWhatsapp" class="footer__img">
-            </a>
-        </div>
+    <footer class="footer bg-black">
+        <!-- PREGUNTAS FRECUENTES -->
+        <article class="footer__article">
+            <a href="#preguntasnosotros" class="footer__link">¿Como hago un pedido?</a>
+            <a href="#preguntasnosotros" class="footer__link">¿Que metodos de pago aceptan?</a>
+            <a href="#preguntasnosotros" class="footer__link">¿A que zona llegan? ¿Haces envios gratis?</a>
+            <a href="#preguntasnosotros" class="footer__link">¿Como me comunico con ustedes? ¿Tienen Instagram?</a>
+            <a href="#preguntasnosotros" class="footer__link">¿Cuanto de demora tienen los envios?</a>
+        </article>
+        <!-- COPYRIGHT -->
+        <article class="footer__articleDos">
+            <h6 class="footer__titulo">&copy;Crisma Burger 2022 | Creado por <span class="footer__span"><a
+                        href="https://www.instagram.com/davidmeok" class="footer__me"
+                        target="_blank">davidmeok</a></span></h6>
+            <!-- REDES SOCIALES -->
+            <div class="footer__div">
+                <a href="https://www.instagram.com/crisma.burger" target="_blank" class="footer__link">
+                    <i class="fa-brands fa-instagram  footer__icon"></i>
+                </a>
+                <a href="https://wa.me/+5491157090208" target="_blank" class="footer__link">
+                    <i class="fa-brands fa-whatsapp  footer__icon"></i>
+                </a>
+            </div>
+        </article>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({
-            duration: 1500
-        });
+        AOS.init({ once: "true" });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"

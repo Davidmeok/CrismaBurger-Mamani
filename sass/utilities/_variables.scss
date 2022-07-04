@@ -1,11 +1,25 @@
 // MAPA DE COLORES
 $colors: (
     primary: #08ff00,
-    secondary: #ffffff,
+    secondary: rgba(255, 255, 255, 0.9),
+    terciary: rgb(0, 0, 0),
+    four: #7e7e7e,
     border: #08ff00,
     hover: #08ff00,
 );
 
+// MAPA DE FONT SIZE
+$font-size: (
+    48rem: 4.8rem,
+    4rem: 4rem,
+    32rem: 3.2rem,
+    3rem: 3rem,
+    24rem: 2.4rem,
+    2rem: 2rem,
+);
+
 // VAR DE FONTS
-$font-title: 'Holtwood One SC', serif;
-$font-description: 'Koulen', cursive;
+$font-title: 'Holtwood One SC',
+    serif;
+$font-description: 'Koulen',
+    cursive;

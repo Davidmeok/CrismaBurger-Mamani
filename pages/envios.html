@@ -10,20 +10,22 @@
     <meta name="keywords"
         content="envios gratis, envios, ubicacion, zona, locacion, pontevedra, libertad, 20 de junio, la teja, el zorzal, la 20, delivery, merlo gomez, catan, las torres, barrio rivadavia, barrio nuevo, pedidos, consultas">
     <title>Crisma Burger | Envios</title>
+    <script src="https://kit.fontawesome.com/eb7f92c8b2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/translated.css">
-    <link rel="shortcut icon" href="../img/logoCrismaBurger.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/logocrismaburger.svg" type="image/x-icon">
 </head>
 
-<body class="bg-dark">
+<body class="bg-black">
     <!-- HEADER -->
-    <header class="header pt-3 pb-1 sticky-top bg-dark">
-        <a href="../index.html" class="header__link animate__animated animate__slideInLeft">
-            <img src="../img/logoCrismaBurger.png" alt="logo-crisma-burger" class="header__logo">
-            <h1 class="header__titulo">Crisma Burger</h1>
+    <header class="header pt-3 pb-1">
+        <a href="../index.html" class="header__link">
+            <img src="../img/logocrismaburger.svg" alt="logocrismaburger" class="header__logo" data-aos="fade-up"
+                data-aos-delay="100">
+            <h1 class="header__titulo" data-aos="fade-up" data-aos-delay="300">Crisma Burger</h1>
         </a>
         <!-- MENU DE HAMBURGUESA -->
         <label for="menuBurger" class="menuburger__label">
@@ -31,77 +33,135 @@
         </label>
         <input type="checkbox" name="menuBurger" id="menuBurger" class="menuburger__input">
         <!-- NAVEGACION -->
-        <nav class="nav animate__animated animate__slideInRight">
+        <nav class="nav">
             <ul class="nav__ul">
-                <li class="nav__li">
+                <li class="nav__li" data-aos="fade-up" data-aos-delay="500">
                     <a href="menu.html" class="nav__link">Menu</a>
                 </li>
-                <li class="nav__li">
+                <li class="nav__li" data-aos="fade-up" data-aos-delay="700">
                     <a href="promos.html" class="nav__link">Promos</a>
                 </li>
-                <li class="nav__li">
+                <li class="nav__li" data-aos="fade-up" data-aos-delay="900">
                     <a href="nosotros.html" class="nav__link">Nosotros</a>
                 </li>
-                <li class="nav__li">
-                    <a href="envios.html" class="nav__link">Envios</a>
+                <li class="nav__li" data-aos="fade-up" data-aos-delay="1100">
+                    <a href="envios.html" class="nav__link" style="color:#08ff00;">Envios</a>
                 </li>
-                <li class="nav__li">
+                <li class="nav__li" data-aos="fade-up" data-aos-delay="1300">
                     <a href="contacto.html" class="nav__link">Contacto</a>
                 </li>
             </ul>
         </nav>
     </header>
     <!-- PANTALLA DE INICIO -->
-    <main class="mainEnvios p-5">
+    <main class="mainEnvios">
+        <!-- BANNER ENVIOS -->
+        <div class="banner  banner--envios">
+            <h2 class="banner__titulo" data-aos="fade-up" data-aos-duration="1500">Envios</h2>
+            <picture class="banner__picture">
+                <a href="#bannerenvios">
+                    <i class="fa-solid fa-angle-down banner__icon" data-aos="fade-up" data-aos-duration="1500"></i>
+                </a>
+            </picture>
+        </div>
         <!-- SECTION UNO -->
-        <section class="sectionUnoEnvios container-fluid">
+        <section id="bannerenvios" class="sectionUnoEnvios container-fluid" data-aos="fade-up" data-aos-duration="2500">
             <!-- IMAGEN -->
-            <picture class="sectionUnoEnvios__picture animate__animated animate__slideInLeft">
-                <img src="../img/imagen__envios.svg" alt="imagenDeMoto" class="sectionUnoEnvios__img">
+            <picture class="sectionUnoEnvios__picture">
+                <img src="../img/imagen__envios.svg" alt="ilustracion" class="sectionUnoEnvios__img">
             </picture>
             <!-- INFORMACION -->
-            <article class="sectionUnoEnvios__article animate__animated animate__slideInRight">
-                <h2 class="titulosDeHamburguesas">¿A donde llegamos?</h2>
+            <article class="sectionUnoEnvios__article">
+                <h3 class="tittle">¿A donde llegamos?</h3>
             </article>
-            <article class="sectionUnoEnvios__articleDos animate__animated animate__slideInRight">
+            <article class="sectionUnoEnvios__articleDos">
                 <p class="parrafosDeHamburguesas">Libertad - Barrio Rivadavia - La Teja - El
                     Zorzal - Pontevedra - 20 De
                     Junio - La 20 - Las Torres - Merlo Gomez - Gonzales Catan - Barrio Nuevo </p>
             </article>
         </section>
         <!-- FLECHA -->
-        <picture class="pictureArrow">
-            <img src="../img/flecha.svg" alt="flechahaciaabajo" class="pictureArrow__img">
+        <picture>
+            <i class="fa-solid fa-angles-down  iconArrow"></i>
         </picture>
         <!-- SECTION DOS -->
-        <section class="sectionDosEnvios" data-aos="fade-down">
-            <h3 class="sectionDosEnvios__titulo">Envios Gratis</h3>
-            <!-- BUTTONS DE ENVIOS -->
+        <section class="sectionDosEnvios container" data-aos="fade-up" data-aos-duration="2500">
+            <h4 class="subtitle">Como comprar</h4>
             <article class="sectionDosEnvios__article">
+                <i class="fa-solid fa-cart-shopping  iconEnvios">
+                    <p class="parrafosDeInformacion">Elegi la hamburguesa que mas te guste.</p>
+                </i>
+                <i class="fa-solid fa-location-dot  iconEnvios">
+                    <p class="parrafosDeInformacion">Decinos tu direccion por whatsapp.
+                    </p>
+                </i>
+                <i class="fa-solid fa-motorcycle  iconEnvios">
+                    <p class="parrafosDeInformacion">Espera tu pedido que esta en camino.</p>
+                </i>
+                <i class="fa-solid fa-face-smile  iconEnvios">
+                    <p class="parrafosDeInformacion">Contanos tu experiencia a traves de nuestro Instagram.</p>
+                </i>
+            </article>
+        </section>
+        <!-- FLECHA -->
+        <picture>
+            <i class="fa-solid fa-angles-down  iconArrow"></i>
+        </picture>
+        <!-- SECTION TRES -->
+        <section class="sectionTresEnvios" data-aos="fade-up" data-aos-duration="2500">
+            <h5 class="subtitle">Envios Gratis</h5>
+            <!-- BUTTONS DE ENVIOS -->
+            <article class="sectionTresEnvios__article">
                 <button class="btn btn-outline-success">Pontevedra</button>
                 <button class="btn btn-outline-success">La Teja</button>
                 <button class="btn btn-outline-success">El Zorzal</button>
             </article>
         </section>
+        <!-- FLECHA -->
+        <picture>
+            <i class="fa-solid fa-angles-down  iconArrow"></i>
+        </picture>
+        <!-- SECTION CUATRO -->
+        <section class="sectionCuatroEnvios container" data-aos="fade-up" data-aos-duration="2500">
+            <h6 class="subtitle">Metodos de pago</h6>
+            <article class="sectionCuatroEnvios__article">
+                <i class="fa-brands fa-cc-visa  iconEnvios"></i>
+                <i class="fa-brands fa-cc-mastercard  iconEnvios"></i>
+                <i class="fa-brands fa-cc-paypal  iconEnvios"></i>
+                <i class="fa-brands fa-cc-amex  iconEnvios"></i>
+                <i class="fa-solid fa-hand-holding-dollar  iconEnvios"></i>
+            </article>
+        </section>
     </main>
     <!-- FOOTER -->
-    <footer class="footer bg-dark">
-        <h6 class="footer__titulo">&copy;Derechos Reservados</h6>
-        <!-- REDES SOCIALES -->
-        <div class="footer__div">
-            <a href="https://www.instagram.com/crisma.burger" target="_blank" class="footer__link">
-                <img src="../img/icono__instagram.svg" alt="iconoDeInstagram" class="footer__img">
-            </a>
-            <a href="https://wa.me/+5491157090208" target="_blank" class="footer__link">
-                <img src="../img/icono_whatsapp.svg" alt="iconoDeWhatsapp" class="footer__img">
-            </a>
-        </div>
+    <footer class="footer bg-black">
+        <!-- PREGUNTAS FRECUENTES -->
+        <article class="footer__article">
+            <a href="nosotros.html" class="footer__link">¿Como hago un pedido?</a>
+            <a href="nosotros.html" class="footer__link">¿Que metodos de pago aceptan?</a>
+            <a href="nosotros.html" class="footer__link">¿A que zona llegan? ¿Haces envios gratis?</a>
+            <a href="nosotros.html" class="footer__link">¿Como me comunico con ustedes? ¿Tienen Instagram?</a>
+            <a href="nosotros.html" class="footer__link">¿Cuanto de demora tienen los envios?</a>
+        </article>
+        <!-- COPYRIGHT -->
+        <article class="footer__articleDos">
+            <h6 class="footer__titulo">&copy;Crisma Burger 2022 | Creado por <span class="footer__span"><a
+                        href="https://www.instagram.com/davidmeok" class="footer__me"
+                        target="_blank">davidmeok</a></span></h6>
+            <!-- REDES SOCIALES -->
+            <div class="footer__div">
+                <a href="https://www.instagram.com/crisma.burger" target="_blank" class="footer__link">
+                    <i class="fa-brands fa-instagram  footer__icon"></i>
+                </a>
+                <a href="https://wa.me/+5491157090208" target="_blank" class="footer__link">
+                    <i class="fa-brands fa-whatsapp  footer__icon"></i>
+                </a>
+            </div>
+        </article>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({
-            duration: 1000
-        });
+        AOS.init({ once: "true" });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"

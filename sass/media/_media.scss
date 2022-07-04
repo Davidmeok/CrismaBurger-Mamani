@@ -4,12 +4,6 @@
     html {
         font-size: 8px;
     }
-
-    /* MEDIA DE PROMOS */
-    .mainPromos {
-        row-gap: 5rem;
-    }
-
 }
 
 /* 768 PX */
@@ -27,7 +21,6 @@
         grid-template-areas:
             "headerlink menuburger"
             "nav nav";
-        padding: 0 5rem 0 5rem;
 
         &__titulo {
             font-size: 3.2rem;
@@ -44,7 +37,7 @@
         }
 
         &__link {
-            font-size: 2.5rem;
+            font-size: 3rem;
         }
     }
 
@@ -56,25 +49,25 @@
         }
 
         &__input:checked~.nav {
+            background-color: rgb(0, 0, 0);
             visibility: visible;
             display: block;
             width: 100%;
-            height: 50vh;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            z-index: -1;
+            animation: checked 1.3s forwards;
         }
 
-    }
+        @keyframes checked {
+            0% {
+                right: -100%;
+            }
 
-
-    /* MEDIA DE INDEX */
-
-    .sectionUnoIndex {
-        grid-template-columns: 2fr 3fr;
-        grid-template-areas:
-            "informacion informacion"
-            "picture picture";
-
-        &__picture {
-            display: none;
+            100% {
+                right: 0;
+            }
         }
     }
 
@@ -89,49 +82,11 @@
 
     /* MEDIA DE ENVIOS */
 
-    .mainEnvios {
-        gap: 5rem;
-    }
-
     .sectionUnoEnvios {
         grid-template-areas:
             "tituloEnvios  tituloEnvios"
             "pictureEnvios  pictureEnvios"
             "parrafoEnvios  parrafoEnvios";
-    }
-
-
-    /* MEDIA DE CONTACTO */
-
-    .mainContacto {
-        padding: 3rem;
-    }
-
-    .sectionUnoContacto {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "formContacto";
-
-        &__picture,
-        &__pictureDos {
-            display: none;
-        }
-    }
-
-    .formContacto {
-        gap: 2rem;
-
-        &__label {
-            font-size: 3rem;
-        }
-    }
-
-    .form-control {
-        font-size: 3rem;
-    }
-
-    .btn {
-        --bs-btn-font-size: 3rem;
     }
 }
 
@@ -144,11 +99,19 @@
 
     /* MEDIA DE INDEX */
 
-    .divIndex {
-        gap: 3rem;
-        grid-template-areas:
-            "imagen imagen"
-            "link   link";
+    .sectionUnoIndex {
+        &__titulo {
+            align-self: center;
+        }
+
+        &__parrafo {
+            align-self: center;
+            padding: 0;
+        }
+
+        &__btn {
+            margin: 300px 0 0 0;
+        }
     }
 
     /* MEDIA DE MENU */
@@ -181,6 +144,20 @@
             "parrafo4Menu  parrafo4Menu";
     }
 
+    .sectionCincoMenu {
+        grid-template-areas:
+            "titulo5Menu  titulo5Menu"
+            "picture5Menu  picture5Menu"
+            "parrafo5Menu  parrafo5Menu";
+    }
+
+    .sectionSeisMenu {
+        grid-template-areas:
+            "titulo6Menu  titulo6Menu"
+            "picture6Menu  picture6Menu"
+            "parrafo6Menu  parrafo6Menu";
+    }
+
     /* MEDIA DE PROMOS */
 
     .sectionUnoPromos {
@@ -197,6 +174,13 @@
             "parrafo2Promos  parrafo2Promos";
     }
 
+    .sectionTresPromos {
+        grid-template-areas:
+            "titulo3Promos  titulo3Promos"
+            "picture3Promos  picture3Promos"
+            "parrafo3Promos  parrafo3Promos";
+    }
+
     /* MEDIA DE NOSOTROS */
 
     .sectionUnoNosotros {
@@ -211,6 +195,30 @@
             "avatar1    avatar1"
             "avatar2    avatar2";
     }
+
+    // MEDIA DE ENVIOS
+
+    .sectionUnoEnvios {
+        grid-template-areas:
+            "tituloEnvios  tituloEnvios"
+            "pictureEnvios  pictureEnvios"
+            "parrafoEnvios  parrafoEnvios";
+    }
+
+    .sectionDosEnvios__article {
+        flex-direction: column;
+    }
+
+    .sectionCuatroEnvios__article {
+        flex-direction: row;
+    }
+
+    // MEDIA DE CONTACTO
+
+    .sectionUnoContacto {
+        grid-template-areas: "pictureContacto pictureContacto"
+            "formContacto formContacto";
+    }
 }
 
 /* 480 PX */
@@ -220,9 +228,9 @@
         font-size: 5px;
     }
 
-    /* MEDIA DE INDEX */
+    // MEDIA DE INDEX
 
-    .sectionUnoIndex__picture {
-        display: none;
+    .sectionUnoIndex__titulo {
+        padding: 75px 0 0 0;
     }
 }

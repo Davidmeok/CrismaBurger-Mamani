@@ -1,7 +1,9 @@
 .mainPromos {
-    @include grid (center, center);
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    @extend .mainMenu;
+}
+
+.banner--promos {
+    background-image: url("../img/bannerpromos.png")
 }
 
 .sectionUnoPromos {
@@ -16,17 +18,17 @@
 
     &__img {
         width: 100%;
-        max-width: 425px;
+        border-radius: 50px;
     }
 
     &__article {
         grid-area: tituloPromos;
-        display: flex;
-        align-items: flex-end;
+        align-self: end;
     }
 
     &__articleDos {
         grid-area: parrafoPromos;
+        align-self: start;
     }
 }
 
@@ -42,15 +44,42 @@
 
     &__img {
         width: 100%;
+        border-radius: 50px;
     }
 
     &__article {
         grid-area: titulo2Promos;
-        display: flex;
-        align-items: flex-end;
+        align-self: end;
     }
 
     &__articleDos {
         grid-area: parrafo2Promos;
+        align-self: start;
+    }
+}
+
+.sectionTresPromos {
+    @extend .sectionUnoMenu;
+    grid-template-areas:
+        "picture3Promos  titulo3Promos"
+        "picture3Promos  parrafo3Promos";
+
+    &__picture {
+        grid-area: picture3Promos;
+    }
+
+    &__img {
+        width: 100%;
+        border-radius: 50px;
+    }
+
+    &__article {
+        grid-area: titulo3Promos;
+        align-self: end;
+    }
+
+    &__articleDos {
+        grid-area: parrafo3Promos;
+        align-self: start;
     }
 }

@@ -3,11 +3,15 @@
     grid-template-columns: 2fr 5fr;
     grid-template-rows: auto;
     grid-template-areas: "headerlink nav";
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 
     &__link {
         @include flex (column, center, center);
         text-decoration: none;
         grid-area: headerlink;
+        padding: 0 0 0 15px;
     }
 
     &__logo {
@@ -16,6 +20,7 @@
     }
 
     &__titulo {
+        text-shadow: 0 0 20px map-get($map: $colors, $key: four);
         color: map-get($map: $colors, $key: secondary);
         font-size: 2.4rem;
 
@@ -33,6 +38,7 @@
 
     &__img {
         height: 40px;
+        padding: 0 15px 0 0;
     }
 
     &__input {
@@ -50,13 +56,13 @@
 
     &__li {
         list-style: none;
+        text-shadow: 0 0 20px map-get($map: $colors, $key: four);
         border-bottom: map-get($map: $colors, $key: border) solid 2px;
     }
 
     &__link {
         text-decoration: none;
         color: map-get($map: $colors, $key: secondary);
-        font-family: "Koulen", cursive;
         font-size: 2rem;
 
         &:hover {
