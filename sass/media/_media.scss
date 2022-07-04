@@ -228,6 +228,17 @@
         font-size: 7.5px;
     }
 
+    // MEDIA DE INDEX
+
+    .sectionUnoIndex__titulo {
+        font-size: 4.2rem;
+    }
+
+    .footer {
+        grid-template-areas: "preguntasFooter preguntasFooter"
+            "linksFooter linksFooter";
+    }
+
     // MEDIA ENVIOS
 
     .sectionDosEnvios__article {

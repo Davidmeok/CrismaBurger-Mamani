@@ -92,10 +92,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     gap: .5rem; }
   .footer__link {
     text-decoration: none;
+    text-align: center;
     color: rgba(255, 255, 255, 0.9);
     font-size: 2rem; }
     .footer__link:hover {
@@ -665,5 +666,9 @@ body {
 @media screen and (max-width: 480px) {
   html {
     font-size: 7.5px; }
+  .sectionUnoIndex__titulo {
+    font-size: 4.2rem; }
+  .footer {
+    grid-template-areas: "preguntasFooter preguntasFooter" "linksFooter linksFooter"; }
   .sectionDosEnvios__article, .sectionCuatroEnvios__article {
     align-items: center; } }

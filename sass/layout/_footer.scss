@@ -10,12 +10,13 @@
 
     &__article {
         grid-area: preguntasFooter;
-        @include flex (column, center, flex-start);
+        @include flex (column, center, center);
         gap: .5rem;
     }
 
     &__link {
         text-decoration: none;
+        text-align: center;
         color: map-get($map: $colors, $key: secondary);
         font-size: 2rem;
 
