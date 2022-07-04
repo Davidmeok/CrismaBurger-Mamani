@@ -34,8 +34,7 @@
         &__ul {
             @include flex (column, center, center);
             height: 100%;
-            margin-top: 3rem;
-            gap: 7rem;
+            gap: 8rem;
         }
 
         &__link {
